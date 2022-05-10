@@ -1,0 +1,130 @@
+-- Creating tables for 2019
+CREATE TABLE dc2019 (
+	order_id VARCHAR(9) NOT NULL,
+	girl VARCHAR NOT NULL,
+	su_id VARCHAR NOT NULL,
+	order_date VARCHAR, 
+	order_time VARCHAR,
+	order_type VARCHAR,
+	bill_zip VARCHAR,
+	dosidos INT,
+	samoas INT,
+	savannahs INT,
+	smores INT,
+	tagalongs INT,
+	thinmints INT,
+	toffeetastic INT,
+	trefoils INT,
+	total_pkgs INT,
+	donation INT,
+    PRIMARY KEY (order_id)
+);
+
+-- ACTION: import 2019 csv file
+-- check count of 2019 to ensure 22973 records
+SELECT * FROM dc2019
+
+-- Creating tables for 2020
+CREATE TABLE dc2020 (
+	order_id VARCHAR(9) NOT NULL,
+	girl VARCHAR NOT NULL,
+	su_id VARCHAR NOT NULL,
+	order_date VARCHAR, 
+	order_time VARCHAR,
+	order_type VARCHAR,
+	bill_zip VARCHAR,
+	lemonups INT,
+	trefoils INT,
+	dosidos INT,
+	samoas INT,
+	tagalongs INT,
+	thinmints INT,
+	smores INT,
+	toffeetastic INT,
+	donation INT,
+	total_pkgs INT,
+    PRIMARY KEY (order_id)
+);
+
+-- ACTION: import 2020 csv file
+-- check count of 2020 to ensure 30709 records
+SELECT * FROM dc2020
+
+-- Creating tables for 2021
+CREATE TABLE dc2021 (
+	order_id VARCHAR(9) NOT NULL,
+	girl VARCHAR NOT NULL,
+	su_id VARCHAR NOT NULL,
+	order_date VARCHAR, 
+	order_time VARCHAR,
+	order_type VARCHAR,
+	bill_zip VARCHAR,
+	lemonups INT,
+	trefoils INT,
+	dosidos INT,
+	samoas INT,
+	tagalongs INT,
+	thinmints INT,
+	smores INT,
+	toffeetastic INT,
+	donation INT,
+	total_pkgs INT,
+    PRIMARY KEY (order_id)
+);
+
+-- ACTION: import 2021 csv file
+-- check count of 2021 to ensure 65590 records
+SELECT * FROM dc2021
+
+-- Creating tables for 2022
+CREATE TABLE dc2022 (
+	order_id VARCHAR(9) NOT NULL,
+	girl VARCHAR NOT NULL,
+	su_id VARCHAR NOT NULL,
+	order_date VARCHAR, 
+	order_time VARCHAR,
+	order_type VARCHAR,
+	bill_zip VARCHAR,
+	adventurefuls VARCHAR,
+	lemonups INT,
+	trefoils INT,
+	dosidos INT,
+	samoas INT,
+	tagalongs INT,
+	thinmints INT,
+	smores INT,
+	toffeetastic INT,
+	donation INT,
+	total_pkgs INT,
+    PRIMARY KEY (order_id)
+);
+
+-- ACTION: import 2022 csv file
+-- check count of 2022 to ensure 66739 records
+SELECT * FROM dc2022
+
+-- Add year 2019 as "season" to new column in 2019 table
+ALTER TABLE dc2019
+ADD season VARCHAR(4)
+DEFAULT '2019';
+
+-- Add year 2020 as "season" to new column in 2019 table
+ALTER TABLE dc2020
+ADD season VARCHAR(4)
+DEFAULT '2020';
+
+-- Add year 2021 as "season" to new column in 2019 table
+ALTER TABLE dc2021
+ADD season VARCHAR(4)
+DEFAULT '2021';
+
+-- Add year 2022 as "season" to new column in 2019 table
+ALTER TABLE dc2022
+ADD season VARCHAR(4)
+DEFAULT '2022';
+
+-- confirm all tables have the new year column
+SELECT * FROM dc2019
+SELECT * FROM dc2020
+SELECT * FROM dc2021
+SELECT * FROM dc2022
