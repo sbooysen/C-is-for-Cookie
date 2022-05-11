@@ -85,7 +85,7 @@ CREATE TABLE dc2022 (
 	order_time VARCHAR,
 	order_type VARCHAR,
 	bill_zip VARCHAR,
-	adventurefuls VARCHAR,
+	adventurefuls INT,
 	lemonups INT,
 	trefoils INT,
 	dosidos INT,
@@ -128,3 +128,61 @@ SELECT * FROM dc2019
 SELECT * FROM dc2020
 SELECT * FROM dc2021
 SELECT * FROM dc2022
+
+-- adjust tables to all have same columns for union
+
+-- Savannahs were not sold 2020-2022; 0 qty sold added 
+ALTER TABLE dc2020
+ADD savannahs INT
+DEFAULT '0';
+
+ALTER TABLE dc2021
+ADD savannahs INT
+DEFAULT '0';
+
+ALTER TABLE dc2022
+ADD savannahs INT
+DEFAULT '0';
+
+-- Lemonups not sold 2019; 0 qty sold added
+ALTER TABLE dc2019
+ADD lemonups INT
+DEFAULT '0';
+
+-- Adventurefuls were not sold 2019-2021; 0 qty sold added 
+ALTER TABLE dc2019
+ADD adventurefuls INT
+DEFAULT '0';
+
+ALTER TABLE dc2020
+ADD adventurefuls INT
+DEFAULT '0';
+
+ALTER TABLE dc2021
+ADD adventurefuls INT
+DEFAULT '0';
+
+-- create union
+SELECT * INTO cookiedata FROM (
+    SELECT order_id, season, girl, su_id, order_type, order_date, order_time, bill_zip, adventurefuls, dosidos, lemonups, samoas, savannahs, smores, tagalongs, thinmints, toffeetastic, trefoils, donation, total_pkgs
+	FROM dc2019
+    UNION
+    SELECT order_id, season, girl, su_id, order_type, order_date, order_time, bill_zip, adventurefuls, dosidos, lemonups, samoas, savannahs, smores, tagalongs, thinmints, toffeetastic, trefoils, donation, total_pkgs
+	FROM dc2020
+    UNION
+    SELECT order_id, season, girl, su_id, order_type, order_date, order_time, bill_zip, adventurefuls, dosidos, lemonups, samoas, savannahs, smores, tagalongs, thinmints, toffeetastic, trefoils, donation, total_pkgs 
+	FROM dc2021
+    UNION
+    SELECT order_id, season, girl, su_id, order_type, order_date, order_time, bill_zip, adventurefuls, dosidos, lemonups, samoas, savannahs, smores, tagalongs, thinmints, toffeetastic, trefoils, donation, total_pkgs 
+	FROM dc2022
+) a
+
+-- confirm all 186011 rows combined with all columns 
+SELECT * FROM cookiedata
+
+-- remove total packages column due to mixed meaning among provided raw data
+ALTER TABLE cookiedata
+DROP COLUMN total_pkgs
+;
+
+SELECT * FROM cookiedata
