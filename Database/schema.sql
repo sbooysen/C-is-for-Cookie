@@ -186,3 +186,14 @@ DROP COLUMN total_pkgs
 ;
 
 SELECT * FROM cookiedata
+
+-- remove 4 digit extension from zip codes
+UPDATE cookiedata
+   SET bill_zip = LEFT(bill_zip,5)
+
+-- left pad the northeastern zip codes for 5 digits with leading zeros
+UPDATE cookiedata
+   SET bill_zip = LPAD(bill_zip, 5, '0')
+   WHERE LENGTH(bill_zip) < 5
+
+SELECT * FROM cookiedata
