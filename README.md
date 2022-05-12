@@ -1,12 +1,12 @@
 # Final-Project-Data
 
 # Technologies Used
-Excel
-Postgress13/PGAdmin 4
-Pandas with Jupyter Notebook
-D3 Leaflet
-Tableau
-Supervised Learning (Classification)
+* Excel
+* Postgress13/PGAdmin 4
+* Pandas with Jupyter Notebook
+* D3 Leaflet
+* Tableau
+* Supervised Learning (Classification)
 
 ## Dataset Used
 We will be using Girl Scout Cookie Sales Data from 2019-2022.
