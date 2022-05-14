@@ -19,13 +19,13 @@ We will be using Girl Scout Cookie Sales Data from 2019-2022.
 [Clipart For Presentation](https://www.littlebrowniebakers.com/clipart/)
 
 ## Data Cleaning and Analysis
-Postgress will be used to clean and merge the data. Excel will be used to organize and sort the data. Pandas will be used to visualize the data as well as manipulate it.
+Postgress will be used to clean and merge the data. Excel will be used to organize and sort the data. Pandas will be used to visualize the data as well as manipulate and analyze the data.
 
 ## Database Storage
 Postgress will be used for housing our database while we store our data in GitHub.
 
 ## Machine Learning
-TBD (Supervised + Classification most likely)
+Supervised learning with Logistic Regression.
 
 ## Dashboard
 Along with our Tableau graphs, we’ll be using D3 and Leaflet to display our data on an interactive map. It will be hosted in a PowerPoint.
