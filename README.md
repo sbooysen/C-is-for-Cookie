@@ -33,9 +33,6 @@ Along with our Tableau graphs, we’ll be using D3 and Leaflet to display our da
 ## What's the deal?
 Our goal is to analyze the Girl Scout cookie data to compare and predict sales in high-income vs. low-income areas. Our data encompasses information from 2019-2022, allowing us to see before, during, and after COVID results. Along with the sales analysis, we'll be analyzing the in-person vs online order data to see if we can predict how the majority of the orders will occur next year.
 
-Our project will be focused on the bellow questions:
-How good/bad were sales in high-income areas(Pre-COVID to Mid-COVID to Post-COVID)?
-How good/bad were sales in mid-income areas(Pre-COVID to Mid-COVID to Post-COVID)?
-How good/bad were sales in low-income areas(Pre-COVID to Mid-COVID to Post-COVID)?
+Our project will be focused on the items listed within the Analytical Chart Prediction file.
 
 We will also be looking over the popularity of certain cookies in the various zips/areas that we are analyzing.
