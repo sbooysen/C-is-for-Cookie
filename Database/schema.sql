@@ -197,3 +197,5 @@ UPDATE cookiedata
    WHERE LENGTH(bill_zip) < 5
 
 SELECT * FROM cookiedata
+
+
