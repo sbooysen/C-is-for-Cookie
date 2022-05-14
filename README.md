@@ -14,6 +14,8 @@ We will be using Girl Scout Cookie Sales Data from 2019-2022.
 
 [US Census for Household Income](https://data.census.gov/cedsci/table?q=median%20income&g=0500000US37119%248600000&tid=ACSST5Y2020.S1903 "US Census for Household Income")
 
+[Clipart For Presentation](https://www.littlebrowniebakers.com/clipart/)
+
 ## Data Cleaning and Analysis
 Postgress will be used to clean and merge the data. Excel will be used to organize and sort the data. Pandas will be used to visualize the data as well as manipulate it.
 
