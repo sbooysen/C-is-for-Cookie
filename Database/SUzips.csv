@@ -1,4 +1,4 @@
-Zip Code,City,County,Service Unit
+zipcode,city,county,name
 27013,Cleveland,Rowan,Rowan
 27054,Woodleaf,Rowan,Rowan
 27209,Biscoe,Montgomery,Montgomery
@@ -12,7 +12,7 @@ Zip Code,City,County,Service Unit
 28009,Badin,Stanly,Stanly
 28023,China Grove,Rowan,Rowan
 28025,Concord,Cabarrus,CAB II
-28026,Concord,Cabarrus,Cab II
+28026,Concord,Cabarrus,CAB II
 28027,Concord,Cabarrus,Trailblazers
 28031,Cornelius,Mecklenburg,Meck 1
 28035,Davidson,Mecklenburg,Meck 1
@@ -24,16 +24,16 @@ Zip Code,City,County,Service Unit
 28072,Granite Quarry,Rowan,Rowan
 28075,Harrisburg,Cabarrus,CAB II
 28078,Huntersville,Mecklenburg,Meck 1
-28079,Indian Trail/Hemby Bridge,Union,Union 1 & Union 2
+28079,Indian Trail/Hemby Bridge,Union,Union 1
 28081,Kannapolis,Cabarrus,Trailblazers
 28082,Kannapolis,Cabarrus,Trailblazers
-28083,Kannapolis,Cabarrus,CAB II & Trailblazers
+28083,Kannapolis,Cabarrus,Trailblazers
 28088,Landis,Rowan,Rowan
 28091,Lilesville,Anson,Anson
 28097,Locust,Stanly,Stanly
 28103,Marshville,Union,Union 2
 28104,"Matthews, Stallings Weddington",Union,Union 1
-28105,Matthews,Mecklenburg,Meck 7 & 8
+28105,Matthews,Mecklenburg,Meck 8
 28106,"Matthews, Stallings Weddington",Union,Union 3
 28107,Midland,Cabarrus,CAB II
 28108,Mineral Springs,Union,Union 3
@@ -59,26 +59,26 @@ Zip Code,City,County,Service Unit
 28159,Spencer,Rowan,Rowan
 28163,Stanfield,Stanly,Stanly
 28170,Wadesboro,Anson,Anson
-28173,Waxhaw & Marvin,Union,Union 1 & Union 3
+28173,Waxhaw & Marvin,Union,Union 3
 28174,Wingate,Union,Union 2
 28202,Charlotte,Mecklenburg,Pacesetters
-28203,Charlotte,Mecklenburg,Meck 12 & 19
-28204,Charlotte,Mecklenburg,Meck 7 & 19
-28205,Charlotte,Mecklenburg,Meck 4 & Meck  7
+28203,Charlotte,Mecklenburg,Meck 19
+28204,Charlotte,Mecklenburg,Meck 19
+28205,Charlotte,Mecklenburg,Meck 7
 28206,Charlotte,Mecklenburg,Meck 4
 28207,Charlotte,Mecklenburg,Meck 19
-28208,Charlotte,Mecklenburg,Pacesetters & Meck 12
-28209,Charlotte,Mecklenburg,Meck 12 & 19
-28210,Charlotte,Mecklenburg,"Meck 12, 13, 19"
-28211,Charlotte,Mecklenburg,"Meck 7, 8, 19"
-28212,Charlotte,Mecklenburg,Meck 7 & 8
+28208,Charlotte,Mecklenburg,Pacesetters
+28209,Charlotte,Mecklenburg,Meck 19
+28210,Charlotte,Mecklenburg,Meck 19
+28211,Charlotte,Mecklenburg,Meck 8
+28212,Charlotte,Mecklenburg,Meck 7
 28213,Charlotte,Mecklenburg,Meck 4
-28214,Charlotte,Mecklenburg,Pacesetters & Meck 12
-28215,Charlotte,Mecklenburg,Meck 4 & Meck 7
-28216,Charlotte,Mecklenburg,Meck 1 & Pacesetters
+28214,Charlotte,Mecklenburg,Pacesetters
+28215,Charlotte,Mecklenburg,Pacesetters
+28216,Charlotte,Mecklenburg,Pacesetters
 28217,Charlotte,Mecklenburg,Meck 12
 28226,Charlotte,Mecklenburg,Meck 19
-28227,Charlotte,Mecklenburg,Meck 7 & 8
+28227,Charlotte,Mecklenburg,Meck 7
 28262,Charlotte,Mecklenburg,Meck 4
 28269,Charlotte,Mecklenburg,Meck 4
 28270,Charlotte,Mecklenburg,Meck 8
@@ -87,7 +87,6 @@ Zip Code,City,County,Service Unit
 28278,Charlotte,Mecklenburg,Meck 12
 28280,Charlotte,Mecklenburg,Pacesetters
 29704,Catawba,York,York 1
-29704,Fort Mill,York,York 2
 29708,Fort Mill/Tega Cay ,York,York 2
 29710,Clover,York,York 2
 29715,Fort Mill,York,York 2
