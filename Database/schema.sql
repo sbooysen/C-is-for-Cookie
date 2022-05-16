@@ -242,5 +242,16 @@ ON serviceunit_zips.su_name = serviceunit_ids.su_name
 
 SELECT * FROM serviceunits
 
+-- Create table for median incomes
+CREATE TABLE median_incomes (
+	county VARCHAR NOT NULL,
+	zipcode VARCHAR,
+	median_income VARCHAR,
+    PRIMARY KEY (zipcode)
+);
+
+SELECT * FROM median_incomes
+
+
 
 

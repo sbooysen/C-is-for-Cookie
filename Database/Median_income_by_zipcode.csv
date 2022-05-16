@@ -1,4 +1,4 @@
-County,Zipcode,Median_income_dollars
+county,zipcode,median_income
 Mecklenburg,28031,"89,658"
 Mecklenburg,28035,0
 Mecklenburg,28036,"116,213"
@@ -40,7 +40,6 @@ Mecklenburg,28277,"105,672"
 Mecklenburg,28278,"101,432"
 Mecklenburg,28280,0
 Mecklenburg,28282,0
-Mecklenburg,29715,"86,378"
 Rowan,27013,"47,241"
 Rowan,27054,"73,232"
 Rowan,28023,"52,424"
