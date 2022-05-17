@@ -1,0 +1,39 @@
+https://app.quickdatabasediagrams.com/#/
+
+cookiedata_final
+-
+order_id PK VARCHAR
+season VARCHAR
+girl VARCHAR
+su_id VARCHAR FK >- serviceunits_final.su_id
+order_type VARCHAR
+order_date VARCHAR
+order_time VARCHAR
+bill_zip VARCHAR FK >- incomes_final.zipcode
+adventurefuls INT
+dosidos INT
+lemonups INT
+samoas INT
+savannahs INT
+smores INT
+tagalongs INT
+thinmints INT
+toffeetastic INT
+trefoils INT
+donation INT
+
+incomes_final
+-
+county VARCHAR
+zipcode PK VARCHAR
+median_income INT
+
+serviceunits_final
+-
+zipcode VARCHAR PK FK >- incomes_final.zipcode
+city VARCHAR
+county VARCHAR
+su_name VARCHAR
+su_id VARCHAR
+
+
