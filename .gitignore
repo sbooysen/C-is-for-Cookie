@@ -10,6 +10,9 @@ Database/2020.csv
 Database/2021.csv
 Database/2022.csv
 
+# Adding config.py
+config.py
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
