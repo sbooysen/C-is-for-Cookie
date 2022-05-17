@@ -36,3 +36,6 @@ Our goal is to analyze the Girl Scout cookie data to compare and predict sales i
 Our project will be focused on the items listed within the Analytical Chart Prediction file.
 
 We will also be looking over the popularity of certain cookies in the various zips/areas that we are analyzing.
+
+## Communication Protocol
+We are meeting both on Slack and in-person in order to work on this project together.
