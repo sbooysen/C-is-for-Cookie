@@ -20,6 +20,7 @@ We will also be looking over the popularity of certain cookies in the various zi
 
 ## Dataset Used
 We will be using Girl Scout Cookie Sales Data (Hornets' Nest) from 2019-2022.
+
 --Zip code boundaries--
 
 [US Census for Household Income](https://data.census.gov/cedsci/table?q=median%20income&g=0500000US37119%248600000&tid=ACSST5Y2020.S1903 "US Census for Household Income")
