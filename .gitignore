@@ -1,3 +1,22 @@
+# Protected data
+cookiedata.csv
+2019.csv
+2020.csv
+2021.csv
+2022.csv
+cookiedata_final.csv
+cookie_database
+Database/cookiedata.csv
+Database/2019.csv
+Database/2020.csv
+Database/2021.csv
+Database/2022.csv
+Database/cookiedata_final.csv
+Database/cookie_database
+
+# Adding config.py file
+config.py
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -5,6 +24,9 @@ __pycache__/
 
 # C extensions
 *.so
+
+# Adding .DS_Store
+.DS_Store
 
 # Distribution / packaging
 .Python
