@@ -13,6 +13,7 @@ Database/2021.csv
 Database/2022.csv
 Database/cookiedata_final.csv
 Database/cookie_database
+Resources/merged_cookie_df.csv
 
 # Adding config.py file
 config.py
