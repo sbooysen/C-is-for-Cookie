@@ -17,9 +17,6 @@ Database/cookie_database
 # Adding config.py file
 config.py
 
-# Adding config.py
-config.py
-
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
