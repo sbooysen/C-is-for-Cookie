@@ -198,4 +198,60 @@ UPDATE cookiedata
 
 SELECT * FROM cookiedata
 
+-- Create table for service unit ids
+CREATE TABLE serviceunit_ids (
+	su_id VARCHAR NOT NULL,
+	su_name VARCHAR, 
+    PRIMARY KEY (su_id)
+);
+-- import service unit id csv
+SELECT * FROM serviceunit_ids
+
+-- Create table for service unit zip codes
+CREATE TABLE serviceunit_zips (
+	zipcode VARCHAR NOT NULL,
+	city VARCHAR,
+	county VARCHAR,
+	su_name VARCHAR,
+    PRIMARY KEY (zipcode)
+);
+
+-- import service unit zip code csv
+SELECT * FROM serviceunit_zips
+
+-- join service unit zip code and id tables
+SELECT serviceunit_zips.*, serviceunit_ids.su_id INTO serviceunits FROM serviceunit_zips
+LEFT OUTER JOIN serviceunit_ids
+ON serviceunit_zips.su_name = serviceunit_ids.su_name
+;
+
+SELECT * FROM serviceunits
+
+-- MECK 1 vs Meck 1 failure - deleting new table, replace MECK with Meck and recreate table
+DROP TABLE serviceunits;
+
+UPDATE serviceunit_ids
+SET su_name = REPLACE(su_name, 'MECK 1', 'Meck 1')
+;
+SELECT * FROM serviceunit_ids
+
+SELECT serviceunit_zips.*, serviceunit_ids.su_id INTO serviceunits FROM serviceunit_zips
+LEFT OUTER JOIN serviceunit_ids
+ON serviceunit_zips.su_name = serviceunit_ids.su_name
+;
+
+SELECT * FROM serviceunits
+
+-- Create table for median incomes
+CREATE TABLE median_incomes (
+	county VARCHAR NOT NULL,
+	zipcode VARCHAR,
+	median_income VARCHAR,
+    PRIMARY KEY (zipcode)
+);
+
+SELECT * FROM median_incomes
+
+
+
 
