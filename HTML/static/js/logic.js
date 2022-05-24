@@ -1,48 +1,59 @@
-// Add console.log to check to see if our code is working.
+// check to see if our code is working.
 console.log("working");
 
-// We create the tile layer that will be the background of our map.
+// tile layer that will be the primary background of our map.
 let streets = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/{z}/{x}/{y}?access_token={accessToken}', {
 	attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery (c) <a href="https://www.mapbox.com/">Mapbox</a>',
 	maxZoom: 18,
 	accessToken: API_KEY
 });
 
-// We create the second tile layer that will be the background of our map.
-let satelliteStreets = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/satellite-streets-v11/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+// second tile layer that will be an optional background of our map.
+let darkstreets = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/dark-v10/tiles/{z}/{x}/{y}?access_token={accessToken}', {
 	attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery (c) <a href="https://www.mapbox.com/">Mapbox</a>',
 	maxZoom: 18,
 	accessToken: API_KEY
 });
 
-// Create the map object with center, zoom level and default layer.
+// map object with center for Charlotte NC, zoom level for Charlotte and surrounding counties and default tile layer.
 let map = L.map('mapid', {
-	center: [40.7, -94.5],
-	zoom: 3,
+	center: [35.2271, -80.8431],
+	zoom: 11,
 	layers: [streets]
 });
 
-// Create a base layer that holds all three maps.
+// base layer that holds both tile layers
 let baseMaps = {
   "Streets": streets,
-  "Satellite": satelliteStreets
+  "Dark": darkstreets
 };
 
-// 1. Add a 2nd layer group for the tectonic plate data.
-let allEarthquakes = new L.LayerGroup();
+// add data layers, including zip code boundaries
+let allcookiesales = new L.LayerGroup();
+let nineteen = new L.LayerGroup();
+let twenty = new L.LayerGroup();
+let twentyone = new L.LayerGroup();
+let twentytwo = new L.LayerGroup();
+let zips = new L.LayerGroup();
 
-
-// 2. Add a reference to the tectonic plates group to the overlays object.
+// create overlay objust with data layers
 let overlays = {
-  "Earthquakes": allEarthquakes
+  "Overall Sales": allcookiesales,
+  "2019": nineteen,
+  "2020": twenty,
+  "2021": twentyone,
+  "2022": twentytwo,
+  "Zip Code Boundaries": zips
 };
 
-// Then we add a control to the map that will allow the user to change which
-// layers are visible.
+// control capability on layers shown
 L.control.layers(baseMaps, overlays).addTo(map);
 
+
+
+
 // Retrieve the earthquake GeoJSON data.
-d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson").then(function(data) {
+d3.json("../../resources/cookiedata").then(function(data) {
 
   // This function returns the style data for each of the earthquakes we plot on
   // the map. We pass the magnitude of the earthquake into two separate functions
@@ -107,6 +118,65 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geoj
   // Then we add the earthquake layer to our map.
   allEarthquakes.addTo(map);
 
+
+// DELIVERABLE 2 - Step 3: Retrieve the major earthquake GeoJSON data >4.5 mag for the week.
+d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_week.geojson").then(function(data) {
+
+  // DELIVERABLE 2 - Step 4: Use the same style as the earthquake data.
+  function styleInfo(feature) {
+    return {
+      opacity: 1,
+      fillOpacity: 1,
+      fillColor: getColor(feature.properties.mag),
+      color: "#000000",
+      radius: getRadius(feature.properties.mag),
+      stroke: true,
+      weight: 0.5
+    };
+  }
+  
+  // DELIVERABLE 2 - Step 5: Change the color function to use three colors for the major earthquakes based on the magnitude of the earthquake.
+  function getColor(magnitude) {
+    if (magnitude > 6) {
+      return "#DC143C";
+    }
+    if (magnitude > 5) {
+      return "#FF8C00";
+    }
+    if (magnitude >= 4.5) {
+      return "#FFD700";
+    }
+    return "#F0E68C";
+  }
+  
+  // DELIVERABLE 2 - Step 6: Use the function that determines the radius of the earthquake marker based on its magnitude.
+  function getRadius(magnitude) {
+    if (magnitude === 0) {
+      return 1;
+    }
+    return magnitude * 4;
+  }
+  
+  // DELIVERABLE 2 - Step 7: Creating a GeoJSON layer with the retrieved data that adds a circle to the map 
+  // sets the style of the circle, and displays the magnitude and location of the earthquake
+  //  after the marker has been created and styled.
+  // DELIVERABLE 2 - Step 8: Add the major earthquakes layer to the map.
+  // DELIVERABLE 2 - Step 9: Close the braces and parentheses for the major earthquake data.
+  L.geoJson(data, {
+    pointToLayer: function(feature, latlng) {
+      console.log(data);
+      return L.circleMarker(latlng);
+    },
+  style: styleInfo,
+  onEachFeature: function(feature, layer) {
+    layer.bindPopup("Magnitude: " + feature.properties.mag + "<br>Location: " + feature.properties.place);
+  }
+  }).addTo(majorQuake);
+
+  majorQuake.addTo(map);
+  });
+
+
   // Here we create a legend control object.
 let legend = L.control({
   position: "bottomright"
@@ -140,8 +210,23 @@ legend.onAdd = function() {
   legend.addTo(map);
 
 
-  // 3. Use d3.json to make a call to get our Tectonic Plate geoJSON data.
-  d3.json().then(() {
-    
-  });
+// DELIVERABLE 1 - Step 3: Use d3.json to make a call to get our Tectonic Plate geoJSON data.
+  
+  // Style the lines with a color and weight that will make it stand out on all maps.
+  // Add the tectonic layer group variable you created in Step 1 to the map, i.e., .addTo(tectonicPlates) and close the geoJSON() layer.
+  // Next, add the tectonic layer group variable to the map, i.e, tectonicPlates.addTo(map).
+  // Finally, close the d3.json() callback.
+
+d3.json("../../resources/zipboundaries2.json").then(function(data) {
+  console.log(data);
+  L.geoJSON(data, {
+    color: "#0000FF",
+    fillColor: "#FFFF00",
+    weight: 2
+  }).addTo(zips);
 });
+
+zips.addTo(map);
+
+});
+
