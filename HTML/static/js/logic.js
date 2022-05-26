@@ -55,7 +55,7 @@ L.control.layers(baseMaps, overlays).addTo(map);
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // REQUIRES FIX
 // import zip code geojson polygons
-d3.json("https://github.com/sbooysen/Final-Project-Data/blob/catshtml/HTML/resources/zipboundaries.json").then(function(data) {
+d3.json("https://raw.githubusercontent.com/sbooysen/Final-Project-Data/catshtml/HTML/resources/zipboundaries.json").then(function(data) {
 
   L.geoJSON(data, {
       color: "#0000FF",
@@ -69,7 +69,7 @@ d3.json("https://github.com/sbooysen/Final-Project-Data/blob/catshtml/HTML/resou
 
 // Create All Sales overlay
 // Bring in the cookie GeoJSON data.
-d3.json("https://github.com/catsdata/GSDC/blob/main/json/cookiesales.geojson").then(function(data) {
+d3.json("https://raw.githubusercontent.com/catsdata/GSDC/f97948f631014c04cdb0b31f2379f44432c03325/json/cookiesales.geojson?token=GHSAT0AAAAAABPXKKWDDQEYPYO7BPHDJFZ2YUOZSCQ").then(function(data) {
 
   function styleInfo(feature) {
     return {
@@ -114,7 +114,7 @@ d3.json("https://github.com/catsdata/GSDC/blob/main/json/cookiesales.geojson").t
     if (allsales === 0) {
       return 1;
     }
-    return allsales / 300;
+    return allsales / 30;
   }
 
   // Creating a GeoJSON layer with the retrieved data.
