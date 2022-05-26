@@ -61,7 +61,12 @@ Postgress will be used for housing our database while we store our data in GitHu
 ### Description of how data were split into training and testing sets
  - **Linear Regression:** We used sklearn train_test_split with the default split of 80% training and 20% testing on the "lin_reg_df" dataframe.
 
+![Machine Learning Output1](https://github.com/sbooysen/Final-Project-Data/blob/Carter_Segment2/Images/Screenshots/lin_reg_1.png)
+![Machine Learning Output2](https://github.com/sbooysen/Final-Project-Data/blob/Carter_Segment2/Images/Screenshots/lin_reg_2.png)
+
  - **Logistic Regression:** We used sklearn train_test_split with the default split of 80% training and 20% testing on the "log_reg_df" dataframe.
+
+![Machine Learning Output3](https://github.com/sbooysen/Final-Project-Data/blob/Carter_Segment2/Images/Screenshots/log_reg.png)
 
 ### Explanation of model choice:
  - **Linear Regression:** We used sklearn LinearRegression() model to fit the training data and make predictions. Because this is continuous data, only the R-squared values, mean squared error, slope, and intercept were calculated.  Because this is not classification, neither a confusion matrix nor accuracy score could not be calculated.
