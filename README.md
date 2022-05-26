@@ -69,7 +69,7 @@ Postgress will be used for housing our database while we store our data in GitHu
 ![Machine Learning Output3](https://github.com/sbooysen/Final-Project-Data/blob/Carter_Segment2/Images/Screenshots/log_reg.png)
 
 ### Explanation of model choice:
- - **Linear Regression:** We used sklearn LinearRegression() model to fit the training data and make predictions. Because this is continuous data, only the R-squared values, mean squared error, slope, and intercept were calculated.  Because this is not classification, neither a confusion matrix nor accuracy score could not be calculated.
+ - **Linear Regression:** We used sklearn LinearRegression() model to fit the training data and make predictions. Because this is continuous data, only the R-squared values, mean squared error, slope, and intercept were calculated.  Because this is not classification, neither a confusion matrix nor accuracy score could be calculated.
 
  - **Logistic Regression:** We used sklearn LogisticRegression() model to fit the training data and make predictions.  An accuracy score, confusion matrix, and classification report were produced in order to evaluate the model.
 
