@@ -44,6 +44,11 @@ The final ERD brought in clean data on zip code incomes and service unit territo
 ## Database Storage
 Postgress will be used for housing our database while we store our data in GitHub.
 
+## JavaScript/HTML
+
+![Map Output1](https://github.com/sbooysen/Final-Project-Data/blob/catshtml/Images/html_js/boundaries.PNG)
+![Map Output2](https://github.com/sbooysen/Final-Project-Data/blob/catshtml/Images/html_js/zipdata.PNG)
+
 ## Machine Learning
 
 ![Machine Learning Output](https://github.com/sbooysen/Final-Project-Data/blob/Carter_Segment2/Images/Stats/sales_by_income.png)
