@@ -49,7 +49,7 @@ Postgress will be used for housing our database while we store our data in GitHu
 ![Machine Learning Output](https://github.com/sbooysen/Final-Project-Data/blob/Carter_Segment2/Images/Stats/sales_by_income.png)
 
 ### Description of preliminary data preprocessing
- - **Linear Regression:** Three tables (incomes_final, serviceunits_final, and cookiedata_final) were imported from pgAdmin and read into dataframes (incomes_df, serviceunits_df, and gscd_df, respectively).  The incomes_df was merged with the gscd_df to produce the merged_df.  Two unnecessary columns were dropped and numerical data types were converted to "integer", except for the "bill_zip" column.  Rows that contained "NaN" and "0" values in the median_income column were dropped from the dataframe. We were able to retain approximatly 70% of the original data and had 129,219 rows of data in the lin_reg_df dataframe..
+ - **Linear Regression:** Three tables (incomes_final, serviceunits_final, and cookiedata_final) were imported from pgAdmin and read into dataframes (incomes_df, serviceunits_df, and gscd_df, respectively).  The incomes_df was merged with the gscd_df to produce the merged_df.  Two unnecessary columns were dropped and numerical data types were converted to "integer", except for the "bill_zip" column.  Rows that contained "NaN" and "0" values in the median_income column were dropped from the dataframe. We were able to retain approximatly 70% of the original data and had 129,219 rows of data in the lin_reg_df dataframe.
 
  - **Logistic Regression:** Data preprocessing was the same as it was for linear regression, except that an additional column (high_low_income) was created in order to bucket median_income values into "low" (0) and "high" (1) income areas.
 
@@ -59,12 +59,12 @@ Postgress will be used for housing our database while we store our data in GitHu
  - **Logistic Regression:** In order to address the question, "Do sales of cookie types predict income of an area?", multiple features (X) were selected that included columns for all of the individual cookie types only.  The target column (y) was "high_low_income", where "0" was considered a low income area (below $60,000 median income) and "1" was considered a high income area (above $60,000 median income).
 
 ### Description of how data were split into training and testing sets
- - **Linear Regression:** We used sklearn train_test_split with the default split of 80% training and 20% testing on the "lin_reg_df" dataframe.
+ - **Linear Regression:** We used sklearn train_test_split with the default split of 80% training and 20% testing on the feature and target columns of the "lin_reg_df" dataframe.
 
 ![Machine Learning Output1](https://github.com/sbooysen/Final-Project-Data/blob/Carter_Segment2/Images/Screenshots/lin_reg_1.png)
 ![Machine Learning Output2](https://github.com/sbooysen/Final-Project-Data/blob/Carter_Segment2/Images/Screenshots/lin_reg_2.png)
 
- - **Logistic Regression:** We used sklearn train_test_split with the default split of 80% training and 20% testing on the "log_reg_df" dataframe.
+ - **Logistic Regression:** We used sklearn train_test_split with the default split of 80% training and 20% testing on the feature and target columns of the "log_reg_df" dataframe.
 
 ![Machine Learning Output3](https://github.com/sbooysen/Final-Project-Data/blob/Carter_Segment2/Images/Screenshots/log_reg.png)
 
