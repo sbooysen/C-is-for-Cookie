@@ -81,5 +81,17 @@ Postgress will be used for housing our database while we store our data in GitHu
 ## Dashboard
 Along with our Tableau graphs, we’ll be using D3 and Leaflet to display our data on an interactive map. It will be hosted in a PowerPoint.
 
+- We are separating the dataset into various categories for analyzation. Using a pie graph, we're separating the cookie types into their sales amounts in order to get an idea of overall popularity.
+
+![Cookie Graph](https://github.com/sbooysen/Final-Project-Data/blob/Stacey_2/Graph%20Images/Cookie_Graph.png)
+
+- Using bar charts and line graphs, we're studying various differences between yearly sales as well as the differences between high and low income area sales.
+
+![Income Graph](https://github.com/sbooysen/Final-Project-Data/blob/Stacey_2/Graph%20Images/Income_Graphs.png)
+
+Our findings with the high and low income areas showed a higher sales amount in the high income areas. We had predicted this to be the case, but also found an interesting variable that potentially skewed the information into favoring this outcome. The higher income areas were more valued by the troops than lower income areas, and therefore the troops would choose mostly high income areas over low income areas. The fact that there are more high income areas to begin with in the dataset, means that there is an imbalance when concluding that one income type buys more boxes than another.
+
+To get a good idea of the discrepancy, we will be graphing the amount of high income zip codes compared to low income zip codes for a more detailed comparison.
+
 ## Communication Protocol
 We are meeting both on Slack and in-person in order to work on this project together.
