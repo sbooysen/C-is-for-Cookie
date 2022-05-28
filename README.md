@@ -46,6 +46,8 @@ Postgress will be used for housing our database while we store our data in GitHu
 
 ## JavaScript/HTML
 
+For the D3 Leaflet mapping, the zip code areas have been sectioned off and markers are being put in place to relay any information needed when clicking on each area.
+
 ![Map Output1](https://github.com/sbooysen/Final-Project-Data/blob/catshtml/Images/html_js/boundaries.PNG)
 ![Map Output2](https://github.com/sbooysen/Final-Project-Data/blob/catshtml/Images/html_js/zipdata.PNG)
 
