@@ -78,35 +78,35 @@ d3.json("https://raw.githubusercontent.com/catsdata/catsdata.github.io/main/temp
     return {
       opacity: 1,
       fillOpacity: 1,
-      fillColor: getColor(features.properties.allsales),
+      fillColor: getColor(feature.properties.allsales),
       color: "#000000",
-      radius: 1,
+      radius: 10,
       stroke: true,
       weight: 0.5
     };
   }
 
   // This function determines the color of the marker based on the quanity of cookie sales.
-  function getColor(totalsales) {
-    if (totalsales >= 40000) {
+  function getColor(allsales) {
+    if (allsales >= 40000) {
       return "#660000";
     }
-    if (totalsales >= 30000) {
+    if (allsales >= 30000) {
       return "#ff6666";
     }
-    if (totalsales >= 20000) {
+    if (allsales >= 20000) {
       return "#ffb366";
     }
-    if (totalsales >= 10000) {
+    if (allsales >= 10000) {
       return "#ffff66";
     }
-    if (totalsales >= 5000) {
+    if (allsales >= 5000) {
       return "#b3ff66";
     }
-    if (totalsales >= 2000) {
+    if (allsales >= 2000) {
       return "#66ffb3";
     }
-    if (totalsales >= 500) {
+    if (allsales >= 500) {
       return "#66ffff";
     }
     return "#98ee00"
@@ -119,7 +119,7 @@ d3.json("https://raw.githubusercontent.com/catsdata/catsdata.github.io/main/temp
       },
     style: styleInfo,
     onEachFeature: function(feature, layer) {
-      layer.bindPopup("Total Boxes Sold: " + features.properties.allsales + "<br>Median Income: " + features.properties.medianincome);
+      layer.bindPopup("Total Boxes Sold: " + feature.properties.allsales + "<br>Median Income: " + feature.properties.medianincome);
   }
 }).addTo(allcookiesales);
 
