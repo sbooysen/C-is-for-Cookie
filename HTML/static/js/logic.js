@@ -89,27 +89,27 @@ d3.json("https://raw.githubusercontent.com/catsdata/catsdata.github.io/main/temp
   // This function determines the color of the marker based on the quanity of cookie sales.
   function getColor(allsales) {
     if (allsales >= 40000) {
-      return "#660000";
+      return "#ff0000";
     }
     if (allsales >= 30000) {
-      return "#ff6666";
+      return "#ffa500";
     }
     if (allsales >= 20000) {
-      return "#ffb366";
+      return "#ffff00";
     }
     if (allsales >= 10000) {
-      return "#ffff66";
+      return "#008000";
     }
     if (allsales >= 5000) {
-      return "#b3ff66";
+      return "#0000ff";
     }
     if (allsales >= 2000) {
-      return "#66ffb3";
+      return "#4b0082";
     }
     if (allsales >= 500) {
-      return "#66ffff";
+      return "#ee82ee";
     }
-    return "#98ee00"
+    return "#ffffff"
   };
 
   L.geoJson(data, {
