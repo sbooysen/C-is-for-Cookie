@@ -119,10 +119,54 @@ d3.json("https://raw.githubusercontent.com/catsdata/catsdata.github.io/main/temp
       },
     style: styleInfo,
     onEachFeature: function(feature, layer) {
-      layer.bindPopup("Total Boxes Sold: " + feature.properties.allsales + "<br>Median Income: " + feature.properties.medianincome);
+      layer.bindPopup(
+        "Zip Code: " + feature.properties.zip + 
+        "<br>Primary Service Unit: " + feature.properties.serviceunitname + 
+        "<br>Median Income: $" + feature.properties.medianincome + 
+        "<br>Total Boxes Sold: " + feature.properties.allsales + 
+        "<br>2019 Boxes Sold: " + feature.properties.sales2019 + 
+        "<br>2020 Boxes Sold: " + feature.properties.sales2020 + 
+        "<br>2021 Boxes Sold: " + feature.properties.sales2021 + 
+        "<br>2022 Boxes Sold: " + feature.properties.sales2022);
   }
 }).addTo(allcookiesales);
 
 allcookiesales.addTo(map);
 });
+
+// LEGEND
+// NEED TO FLIP LEGEND CODE
+
+let legend = L.control({
+  position: "bottomright"
+});
+
+legend.onAdd = function() {
+  let div = L.DomUtil.create("div", "info legend");
+
+  const sales = ['40k', '30k', '20k', '10k', '5k', '2k', '500', '<500'];
+  const colors = [
+    "#ff0000",
+    "#ffa500",
+    "#ffff00",
+    "#008000",
+    "#0000ff",
+    "#4b0082",
+    "#ee82ee",
+    "#ffffff"
+  ];
+
+  for (var i = 0; i < sales.length; i++) {
+    console.log(colors[i]);
+    div.innerHTML +=
+      "<i style='background: " + colors[i] + "'></i> " +
+      sales[i] + (sales[i + 1] ? "&ndash;" + sales[i + 1] + "<br>" : "+");
+    }
+    return div;
+  };
+
+  legend.addTo(map);
+
+;
+
 
