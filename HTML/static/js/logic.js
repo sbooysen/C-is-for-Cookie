@@ -109,7 +109,7 @@ d3.json("https://raw.githubusercontent.com/catsdata/catsdata.github.io/main/temp
     if (allsales >= 500) {
       return "#ee82ee";
     }
-    return "#ffffff"
+    return "#f5f5f5"
   };
 
   L.geoJson(data, {
@@ -144,16 +144,16 @@ let legend = L.control({
 legend.onAdd = function() {
   let div = L.DomUtil.create("div", "info legend");
 
-  const sales = ['40k', '30k', '20k', '10k', '5k', '2k', '500', '<500'];
+  const sales = ['0', '500', '2k', '5k', '10k', '20k', '30k', '40k'];
   const colors = [
-    "#ff0000",
-    "#ffa500",
-    "#ffff00",
-    "#008000",
-    "#0000ff",
-    "#4b0082",
+    "#D3D3D3",
     "#ee82ee",
-    "#ffffff"
+    "#4b0082",
+    "#0000ff",
+    "#008000",
+    "#ffff00",
+    "#ffa500",
+    "#ff0000"
   ];
 
   for (var i = 0; i < sales.length; i++) {
