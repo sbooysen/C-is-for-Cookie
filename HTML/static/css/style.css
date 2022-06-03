@@ -20,3 +20,12 @@ body,
   margin-right: 8px;
   opacity: 0.7;
 }
+.leaflet-div-logogreen {
+  background: transparent;
+  border: 0px transparent;
+  margin-left: -10px;
+  margin-top: -34px;
+  background-image:url(https://github.com/sbooysen/Final-Project-Data/blob/catshtml/Images/logos/green.png);
+  width:20px;
+  height:34px;
+}
