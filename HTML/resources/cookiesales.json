@@ -1,0 +1,206 @@
+{"type":"FeatureCollection","features":[
+    {"type":"Feature","properties":{"zip":"28170","serviceunitid":"611","serviceunitname":"Anson","city":"Wadesboro","county":"Anson","2019sales":42,"2020sales":199,"2021sales":291,"2022sales":425,"allsales":957,"medianincome":"32658"},"geometry":{"type":"Point","coordinates":[-80.0535,35.0255]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28135","serviceunitid":"611","serviceunitname":"Anson","city":"Polkton","county":"Anson","2019sales":60,"2020sales":50,"2021sales":25,"2022sales":103,"allsales":238,"medianincome":"50075"},"geometry":{"type":"Point","coordinates":[-80.1652,34.9692]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28133","serviceunitid":"611","serviceunitname":"Anson","city":"Peachland","county":"Anson","2019sales":18,"2020sales":83,"2021sales":83,"2022sales":134,"allsales":318,"medianincome":"54938"},"geometry":{"type":"Point","coordinates":[-80.2879,34.9463]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28119","serviceunitid":"611","serviceunitname":"Anson","city":"Morven","county":"Anson","2019sales":8,"2020sales":17,"2021sales":82,"2022sales":194,"allsales":301,"medianincome":"45197"},"geometry":{"type":"Point","coordinates":[-80.02,34.859]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28091","serviceunitid":"611","serviceunitname":"Anson","city":"Lilesville","county":"Anson","2019sales":13,"2020sales":10,"2021sales":50,"2022sales":40,"allsales":113,"medianincome":"33016"},"geometry":{"type":"Point","coordinates":[-79.9417,34.9944]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28007","serviceunitid":"611","serviceunitname":"Anson","city":"Ansonville","county":"Anson","2019sales":0,"2020sales":0,"2021sales":1,"2022sales":3,"allsales":4,"medianincome":"43958"},"geometry":{"type":"Point","coordinates":[-80.1077,35.1047]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28083","serviceunitid":"621","serviceunitname":"Trailblazers","city":"Kannapolis","county":"Cabarrus","2019sales":545,"2020sales":765,"2021sales":1781,"2022sales":1746,"allsales":4837,"medianincome":"49527"},"geometry":{"type":"Point","coordinates":[-80.5772,35.492]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28082","serviceunitid":"621","serviceunitname":"Trailblazers","city":"Kannapolis","county":"Cabarrus","2019sales":0,"2020sales":4,"2021sales":15,"2022sales":39,"allsales":58,"medianincome":"unknown"},"geometry":{"type":"Point","coordinates":[-80.62,35.49]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28081","serviceunitid":"621","serviceunitname":"Trailblazers","city":"Kannapolis","county":"Cabarrus","2019sales":367,"2020sales":841,"2021sales":1847,"2022sales":1743,"allsales":4798,"medianincome":"54041"},"geometry":{"type":"Point","coordinates":[-80.666,35.4989]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28027","serviceunitid":"621","serviceunitname":"Trailblazers","city":"Concord","county":"Cabarrus","2019sales":3050,"2020sales":5008,"2021sales":11203,"2022sales":10047,"allsales":29308,"medianincome":"77367"},"geometry":{"type":"Point","coordinates":[-80.6549,35.4003]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28124","serviceunitid":"622","serviceunitname":"CAB II","city":"Mount Pleasant","county":"Cabarrus","2019sales":89,"2020sales":222,"2021sales":566,"2022sales":421,"allsales":1298,"medianincome":"65658"},"geometry":{"type":"Point","coordinates":[-80.3881,35.4227]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28107","serviceunitid":"622","serviceunitname":"CAB II","city":"Midland","county":"Cabarrus","2019sales":330,"2020sales":449,"2021sales":1172,"2022sales":1700,"allsales":3651,"medianincome":"81351"},"geometry":{"type":"Point","coordinates":[-80.5216,35.2593]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28075","serviceunitid":"622","serviceunitname":"CAB II","city":"Harrisburg","county":"Cabarrus","2019sales":1283,"2020sales":1752,"2021sales":4648,"2022sales":3711,"allsales":11394,"medianincome":"110906"},"geometry":{"type":"Point","coordinates":[-80.6438,35.3015]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28026","serviceunitid":"622","serviceunitname":"CAB II","city":"Concord","county":"Cabarrus","2019sales":17,"2020sales":10,"2021sales":108,"2022sales":101,"allsales":236,"medianincome":"unknown"},"geometry":{"type":"Point","coordinates":[-80.5778,35.4109]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28025","serviceunitid":"622","serviceunitname":"CAB II","city":"Concord","county":"Cabarrus","2019sales":1432,"2020sales":2209,"2021sales":6266,"2022sales":6509,"allsales":16416,"medianincome":"58257"},"geometry":{"type":"Point","coordinates":[-80.5216,35.3898]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28078","serviceunitid":"631","serviceunitname":"Meck 1","city":"Huntersville","county":"Mecklenburg","2019sales":5024,"2020sales":6634,"2021sales":16848,"2022sales":15743,"allsales":44249,"medianincome":"101752"},"geometry":{"type":"Point","coordinates":[-80.8765,35.4173]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28070","serviceunitid":"631","serviceunitname":"Meck 1","city":"Huntersville","county":"Mecklenburg","2019sales":227,"2020sales":65,"2021sales":66,"2022sales":60,"allsales":418,"medianincome":"unknown"},"geometry":{"type":"Point","coordinates":[-80.8499,35.4094]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28036","serviceunitid":"631","serviceunitname":"Meck 1","city":"Davidson","county":"Mecklenburg","2019sales":1112,"2020sales":1719,"2021sales":4298,"2022sales":5206,"allsales":12335,"medianincome":"116213"},"geometry":{"type":"Point","coordinates":[-80.799,35.4874]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28035","serviceunitid":"631","serviceunitname":"Meck 1","city":"Davidson","county":"Mecklenburg","2019sales":7,"2020sales":0,"2021sales":17,"2022sales":13,"allsales":37,"medianincome":"unknown"},"geometry":{"type":"Point","coordinates":[-80.8394,35.506]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28031","serviceunitid":"631","serviceunitname":"Meck 1","city":"Cornelius","county":"Mecklenburg","2019sales":2122,"2020sales":2966,"2021sales":5124,"2022sales":5443,"allsales":15655,"medianincome":"89658"},"geometry":{"type":"Point","coordinates":[-80.8876,35.4725]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28280","serviceunitid":"632","serviceunitname":"Pacesetters","city":"Charlotte","county":"Mecklenburg","2019sales":0,"2020sales":28,"2021sales":3,"2022sales":125,"allsales":156,"medianincome":"unknown"},"geometry":{"type":"Point","coordinates":[-80.8431,35.2265]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28216","serviceunitid":"632","serviceunitname":"Pacesetters","city":"Charlotte","county":"Mecklenburg","2019sales":3827,"2020sales":4418,"2021sales":8503,"2022sales":6006,"allsales":22754,"medianincome":"50347"},"geometry":{"type":"Point","coordinates":[-80.8876,35.3202]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28215","serviceunitid":"632","serviceunitname":"Pacesetters","city":"Charlotte","county":"Mecklenburg","2019sales":1895,"2020sales":3248,"2021sales":6343,"2022sales":5553,"allsales":17039,"medianincome":"51236"},"geometry":{"type":"Point","coordinates":[-80.7104,35.2414]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28214","serviceunitid":"632","serviceunitname":"Pacesetters","city":"Charlotte","county":"Mecklenburg","2019sales":1607,"2020sales":2295,"2021sales":5270,"2022sales":4201,"allsales":13373,"medianincome":"67398"},"geometry":{"type":"Point","coordinates":[-80.9761,35.2833]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28208","serviceunitid":"632","serviceunitname":"Pacesetters","city":"Charlotte","county":"Mecklenburg","2019sales":830,"2020sales":1314,"2021sales":3423,"2022sales":2291,"allsales":7858,"medianincome":"41030"},"geometry":{"type":"Point","coordinates":[-80.9097,35.213]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28202","serviceunitid":"632","serviceunitname":"Pacesetters","city":"Charlotte","county":"Mecklenburg","2019sales":641,"2020sales":1158,"2021sales":1870,"2022sales":1686,"allsales":5355,"medianincome":"100709"},"geometry":{"type":"Point","coordinates":[-80.8461,35.2327]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28130","serviceunitid":"632","serviceunitname":"Pacesetters","city":"Paw Creek","county":"Mecklenburg","2019sales":0,"2020sales":0,"2021sales":4,"2022sales":16,"allsales":20,"medianincome":"unknown"},"geometry":{"type":"Point","coordinates":[-80.9284,35.2776]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28269","serviceunitid":"634","serviceunitname":"Meck 4","city":"Charlotte","county":"Mecklenburg","2019sales":6308,"2020sales":7810,"2021sales":13611,"2022sales":13934,"allsales":41663,"medianincome":"68636"},"geometry":{"type":"Point","coordinates":[-80.799,35.3353]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28262","serviceunitid":"634","serviceunitname":"Meck 4","city":"Charlotte","county":"Mecklenburg","2019sales":1348,"2020sales":2669,"2021sales":4457,"2022sales":3545,"allsales":12019,"medianincome":"57371"},"geometry":{"type":"Point","coordinates":[-80.7325,35.3302]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28213","serviceunitid":"634","serviceunitname":"Meck 4","city":"Charlotte","county":"Mecklenburg","2019sales":2681,"2020sales":4606,"2021sales":5094,"2022sales":4196,"allsales":16577,"medianincome":"48570"},"geometry":{"type":"Point","coordinates":[-80.727,35.2916]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28206","serviceunitid":"634","serviceunitname":"Meck 4","city":"Charlotte","county":"Mecklenburg","2019sales":309,"2020sales":751,"2021sales":1223,"2022sales":1089,"allsales":3372,"medianincome":"33718"},"geometry":{"type":"Point","coordinates":[-80.8267,35.2557]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28227","serviceunitid":"637","serviceunitname":"Meck 7","city":"Charlotte","county":"Mecklenburg","2019sales":2291,"2020sales":3103,"2021sales":6661,"2022sales":6202,"allsales":18257,"medianincome":"63529"},"geometry":{"type":"Point","coordinates":[-80.6549,35.1826]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28212","serviceunitid":"637","serviceunitname":"Meck 7","city":"Charlotte","county":"Mecklenburg","2019sales":1089,"2020sales":2060,"2021sales":2165,"2022sales":2882,"allsales":8196,"medianincome":"42859"},"geometry":{"type":"Point","coordinates":[-80.7492,35.1953]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28205","serviceunitid":"637","serviceunitname":"Meck 7","city":"Charlotte","county":"Mecklenburg","2019sales":1852,"2020sales":3358,"2021sales":6800,"2022sales":6531,"allsales":18541,"medianincome":"56196"},"geometry":{"type":"Point","coordinates":[-80.799,35.2264]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28270","serviceunitid":"638","serviceunitname":"Meck 8","city":"Charlotte","county":"Mecklenburg","2019sales":1723,"2020sales":3051,"2021sales":8073,"2022sales":7857,"allsales":20704,"medianincome":"103175"},"geometry":{"type":"Point","coordinates":[-80.7713,35.1098]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28211","serviceunitid":"638","serviceunitname":"Meck 8","city":"Charlotte","county":"Mecklenburg","2019sales":2148,"2020sales":2988,"2021sales":8141,"2022sales":7272,"allsales":20549,"medianincome":"93236"},"geometry":{"type":"Point","coordinates":[-80.7935,35.166]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28105","serviceunitid":"638","serviceunitname":"Meck 8","city":"Matthews","county":"Mecklenburg","2019sales":2409,"2020sales":3731,"2021sales":6915,"2022sales":7262,"allsales":20317,"medianincome":"86463"},"geometry":{"type":"Point","coordinates":[-80.7104,35.1106]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28278","serviceunitid":"642","serviceunitname":"Meck 12","city":"Charlotte","county":"Mecklenburg","2019sales":2596,"2020sales":3158,"2021sales":8190,"2022sales":6538,"allsales":20482,"medianincome":"101432"},"geometry":{"type":"Point","coordinates":[-81.0203,35.134]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28273","serviceunitid":"642","serviceunitname":"Meck 12","city":"Charlotte","county":"Mecklenburg","2019sales":1391,"2020sales":2808,"2021sales":5337,"2022sales":4013,"allsales":13549,"medianincome":"72986"},"geometry":{"type":"Point","coordinates":[-80.9539,35.1291]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28217","serviceunitid":"642","serviceunitname":"Meck 12","city":"Charlotte","county":"Mecklenburg","2019sales":459,"2020sales":1406,"2021sales":2265,"2022sales":3303,"allsales":7433,"medianincome":"53177"},"geometry":{"type":"Point","coordinates":[-80.9042,35.1744]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28277","serviceunitid":"643","serviceunitname":"Meck 13","city":"Charlotte","county":"Mecklenburg","2019sales":4347,"2020sales":6695,"2021sales":14697,"2022sales":14453,"allsales":40192,"medianincome":"105672"},"geometry":{"type":"Point","coordinates":[-80.8212,35.0535]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28134","serviceunitid":"643","serviceunitname":"Meck 13","city":"Pineville","county":"Mecklenburg","2019sales":385,"2020sales":586,"2021sales":1652,"2022sales":1709,"allsales":4332,"medianincome":"58861"},"geometry":{"type":"Point","coordinates":[-80.8876,35.0804]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28226","serviceunitid":"649","serviceunitname":"Meck 19","city":"Charlotte","county":"Mecklenburg","2019sales":3369,"2020sales":3525,"2021sales":8616,"2022sales":9567,"allsales":25077,"medianincome":"103103"},"geometry":{"type":"Point","coordinates":[-80.799,35.1173]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28210","serviceunitid":"649","serviceunitname":"Meck 19","city":"Charlotte","county":"Mecklenburg","2019sales":2129,"2020sales":2987,"2021sales":6531,"2022sales":7351,"allsales":18998,"medianincome":"75703"},"geometry":{"type":"Point","coordinates":[-80.8599,35.1274]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28209","serviceunitid":"649","serviceunitname":"Meck 19","city":"Charlotte","county":"Mecklenburg","2019sales":891,"2020sales":1600,"2021sales":5211,"2022sales":4991,"allsales":12693,"medianincome":"82942"},"geometry":{"type":"Point","coordinates":[-80.8488,35.1811]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28207","serviceunitid":"649","serviceunitname":"Meck 19","city":"Charlotte","county":"Mecklenburg","2019sales":311,"2020sales":475,"2021sales":2119,"2022sales":1506,"allsales":4411,"medianincome":"177898"},"geometry":{"type":"Point","coordinates":[-80.8239,35.1929]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28204","serviceunitid":"649","serviceunitname":"Meck 19","city":"Charlotte","county":"Mecklenburg","2019sales":568,"2020sales":746,"2021sales":1367,"2022sales":1273,"allsales":3954,"medianincome":"70000"},"geometry":{"type":"Point","coordinates":[-80.8295,35.2151]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28203","serviceunitid":"649","serviceunitname":"Meck 19","city":"Charlotte","county":"Mecklenburg","2019sales":946,"2020sales":1194,"2021sales":3765,"2022sales":3099,"allsales":9004,"medianincome":"87725"},"geometry":{"type":"Point","coordinates":[-80.8599,35.2147]}}
+    ,
+    {"type":"Feature","properties":{"zip":"27371","serviceunitid":"651","serviceunitname":"Montgomery","city":"Troy","county":"Montgomery","2019sales":16,"2020sales":51,"2021sales":149,"2022sales":28,"allsales":244,"medianincome":"50532"},"geometry":{"type":"Point","coordinates":[-79.964,35.4531]}}
+    ,
+    {"type":"Feature","properties":{"zip":"27356","serviceunitid":"651","serviceunitname":"Montgomery","city":"Star","county":"Montgomery","2019sales":0,"2020sales":2,"2021sales":133,"2022sales":21,"allsales":156,"medianincome":"45694"},"geometry":{"type":"Point","coordinates":[-79.7961,35.4281]}}
+    ,
+    {"type":"Feature","properties":{"zip":"27306","serviceunitid":"651","serviceunitname":"Montgomery","city":"Mount Gilead","county":"Montgomery","2019sales":28,"2020sales":56,"2021sales":305,"2022sales":126,"allsales":515,"medianincome":"52861"},"geometry":{"type":"Point","coordinates":[-79.964,35.1924]}}
+    ,
+    {"type":"Feature","properties":{"zip":"27229","serviceunitid":"651","serviceunitname":"Montgomery","city":"Candor","county":"Montgomery","2019sales":0,"2020sales":13,"2021sales":94,"2022sales":12,"allsales":119,"medianincome":"40875"},"geometry":{"type":"Point","coordinates":[-79.8073,35.2445]}}
+    ,
+    {"type":"Feature","properties":{"zip":"27209","serviceunitid":"651","serviceunitname":"Montgomery","city":"Biscoe","county":"Montgomery","2019sales":5,"2020sales":0,"2021sales":70,"2022sales":17,"allsales":92,"medianincome":"40927"},"geometry":{"type":"Point","coordinates":[-79.7512,35.3592]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28159","serviceunitid":"661","serviceunitname":"Rowan","city":"Spencer","county":"Rowan","2019sales":117,"2020sales":14,"2021sales":216,"2022sales":153,"allsales":500,"medianincome":"53495"},"geometry":{"type":"Point","coordinates":[-80.4382,35.6924]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28147","serviceunitid":"661","serviceunitname":"Rowan","city":"Salisbury","county":"Rowan","2019sales":162,"2020sales":201,"2021sales":747,"2022sales":747,"allsales":1857,"medianincome":"52268"},"geometry":{"type":"Point","coordinates":[-80.5661,35.6971]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28146","serviceunitid":"661","serviceunitname":"Rowan","city":"Salisbury","county":"Rowan","2019sales":366,"2020sales":749,"2021sales":1883,"2022sales":1209,"allsales":4207,"medianincome":"56553"},"geometry":{"type":"Point","coordinates":[-80.3881,35.6396]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28145","serviceunitid":"661","serviceunitname":"Rowan","city":"Salisbury","county":"Rowan","2019sales":23,"2020sales":2,"2021sales":17,"2022sales":37,"allsales":79,"medianincome":"unknown"},"geometry":{"type":"Point","coordinates":[-80.4648,35.6627]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28144","serviceunitid":"661","serviceunitname":"Rowan","city":"Salisbury","county":"Rowan","2019sales":178,"2020sales":128,"2021sales":744,"2022sales":641,"allsales":1691,"medianincome":"45161"},"geometry":{"type":"Point","coordinates":[-80.466,35.7]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28138","serviceunitid":"661","serviceunitname":"Rowan","city":"Rockwell","county":"Rowan","2019sales":37,"2020sales":159,"2021sales":513,"2022sales":488,"allsales":1197,"medianincome":"48214"},"geometry":{"type":"Point","coordinates":[-80.4215,35.5231]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28125","serviceunitid":"661","serviceunitname":"Rowan","city":"Mount Ulla","county":"Rowan","2019sales":15,"2020sales":15,"2021sales":72,"2022sales":69,"allsales":171,"medianincome":"69059"},"geometry":{"type":"Point","coordinates":[-80.6993,35.6642]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28088","serviceunitid":"661","serviceunitname":"Rowan","city":"Landis","county":"Rowan","2019sales":55,"2020sales":139,"2021sales":168,"2022sales":145,"allsales":507,"medianincome":"56635"},"geometry":{"type":"Point","coordinates":[-80.6133,35.5463]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28072","serviceunitid":"661","serviceunitname":"Rowan","city":"Granite Quarry","county":"Rowan","2019sales":15,"2020sales":0,"2021sales":36,"2022sales":11,"allsales":62,"medianincome":"44044"},"geometry":{"type":"Point","coordinates":[-80.4473,35.6152]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28071","serviceunitid":"661","serviceunitname":"Rowan","city":"Gold Hill","county":"Rowan","2019sales":151,"2020sales":98,"2021sales":401,"2022sales":299,"allsales":949,"medianincome":"59556"},"geometry":{"type":"Point","coordinates":[-80.3102,35.5141]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28041","serviceunitid":"661","serviceunitname":"Rowan","city":"Faith","county":"Rowan","2019sales":6,"2020sales":10,"2021sales":137,"2022sales":136,"allsales":289,"medianincome":"unknown"},"geometry":{"type":"Point","coordinates":[-80.4608,35.5869]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28039","serviceunitid":"661","serviceunitname":"Rowan","city":"East Spencer","county":"Rowan","2019sales":6,"2020sales":0,"2021sales":12,"2022sales":19,"allsales":37,"medianincome":"23854"},"geometry":{"type":"Point","coordinates":[-80.4339,35.6837]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28023","serviceunitid":"661","serviceunitname":"Rowan","city":"China Grove","county":"Rowan","2019sales":147,"2020sales":143,"2021sales":693,"2022sales":468,"allsales":1451,"medianincome":"52424"},"geometry":{"type":"Point","coordinates":[-80.5994,35.5805]}}
+    ,
+    {"type":"Feature","properties":{"zip":"27054","serviceunitid":"661","serviceunitname":"Rowan","city":"Woodleaf","county":"Rowan","2019sales":4,"2020sales":0,"2021sales":24,"2022sales":32,"allsales":60,"medianincome":"73232"},"geometry":{"type":"Point","coordinates":[-80.5772,35.7954]}}
+    ,
+    {"type":"Feature","properties":{"zip":"27013","serviceunitid":"661","serviceunitname":"Rowan","city":"Cleveland","county":"Rowan","2019sales":36,"2020sales":20,"2021sales":111,"2022sales":118,"allsales":285,"medianincome":"47241"},"geometry":{"type":"Point","coordinates":[-80.6993,35.7508]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28163","serviceunitid":"671","serviceunitname":"Stanly","city":"Stanfield","county":"Stanly","2019sales":58,"2020sales":70,"2021sales":285,"2022sales":409,"allsales":822,"medianincome":"63890"},"geometry":{"type":"Point","coordinates":[-80.4327,35.2087]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28137","serviceunitid":"671","serviceunitname":"Stanly","city":"Richfield","county":"Stanly","2019sales":2,"2020sales":27,"2021sales":64,"2022sales":95,"allsales":188,"medianincome":"65902"},"geometry":{"type":"Point","coordinates":[-80.221,35.5286]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28129","serviceunitid":"671","serviceunitname":"Stanly","city":"Oakboro","county":"Stanly","2019sales":47,"2020sales":124,"2021sales":260,"2022sales":288,"allsales":719,"medianincome":"61250"},"geometry":{"type":"Point","coordinates":[-80.3436,35.2016]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28128","serviceunitid":"671","serviceunitname":"Stanly","city":"Norwood, Aquadale","county":"Stanly","2019sales":75,"2020sales":63,"2021sales":154,"2022sales":212,"allsales":504,"medianincome":"55060"},"geometry":{"type":"Point","coordinates":[-80.1652,35.2307]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28127","serviceunitid":"671","serviceunitname":"Stanly","city":"New London","county":"Stanly","2019sales":40,"2020sales":124,"2021sales":233,"2022sales":214,"allsales":611,"medianincome":"62330"},"geometry":{"type":"Point","coordinates":[-80.1205,35.4878]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28097","serviceunitid":"671","serviceunitname":"Stanly","city":"Locust","county":"Stanly","2019sales":58,"2020sales":434,"2021sales":588,"2022sales":762,"allsales":1842,"medianincome":"55820"},"geometry":{"type":"Point","coordinates":[-80.3993,35.304]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28009","serviceunitid":"671","serviceunitname":"Stanly","city":"Badin","county":"Stanly","2019sales":4,"2020sales":15,"2021sales":23,"2022sales":55,"allsales":97,"medianincome":"32031"},"geometry":{"type":"Point","coordinates":[-80.1108,35.407]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28002","serviceunitid":"671","serviceunitname":"Stanly","city":"Millingport","county":"Stanly","2019sales":0,"2020sales":15,"2021sales":150,"2022sales":26,"allsales":191,"medianincome":"unknown"},"geometry":{"type":"Point","coordinates":[-80.1982,35.3481]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28001","serviceunitid":"671","serviceunitname":"Stanly","city":"Albemarle","county":"Stanly","2019sales":365,"2020sales":294,"2021sales":1553,"2022sales":1101,"allsales":3313,"medianincome":"50813"},"geometry":{"type":"Point","coordinates":[-80.2098,35.3214]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28104","serviceunitid":"681","serviceunitname":"Union 1","city":"Matthews, Stallings Weddington","county":"Union","2019sales":2767,"2020sales":3517,"2021sales":9155,"2022sales":9477,"allsales":24916,"medianincome":"108599"},"geometry":{"type":"Point","coordinates":[-80.7104,35.0451]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28079","serviceunitid":"681","serviceunitname":"Union 1","city":"Indian Trail/Hemby Bridge","county":"Union","2019sales":2275,"2020sales":2906,"2021sales":7421,"2022sales":7509,"allsales":20111,"medianincome":"84301"},"geometry":{"type":"Point","coordinates":[-80.5994,35.102]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28174","serviceunitid":"682","serviceunitname":"Union 2","city":"Wingate","county":"Union","2019sales":111,"2020sales":242,"2021sales":374,"2022sales":563,"allsales":1290,"medianincome":"53521"},"geometry":{"type":"Point","coordinates":[-80.4438,34.9806]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28112","serviceunitid":"682","serviceunitname":"Union 2","city":"Monroe & Unionville","county":"Union","2019sales":823,"2020sales":1366,"2021sales":1662,"2022sales":2311,"allsales":6162,"medianincome":"52471"},"geometry":{"type":"Point","coordinates":[-80.5216,34.9103]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28111","serviceunitid":"682","serviceunitname":"Union 2","city":"Monroe & Unionville","county":"Union","2019sales":71,"2020sales":34,"2021sales":34,"2022sales":49,"allsales":188,"medianincome":"unknown"},"geometry":{"type":"Point","coordinates":[-80.5681,35.0014]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28110","serviceunitid":"682","serviceunitname":"Union 2","city":"Monroe & Unionville","county":"Union","2019sales":2040,"2020sales":2624,"2021sales":7049,"2022sales":6872,"allsales":18585,"medianincome":"69351"},"geometry":{"type":"Point","coordinates":[-80.5216,35.085]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28103","serviceunitid":"682","serviceunitname":"Union 2","city":"Marshville","county":"Union","2019sales":321,"2020sales":695,"2021sales":330,"2022sales":627,"allsales":1973,"medianincome":"61344"},"geometry":{"type":"Point","coordinates":[-80.3436,34.9836]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28173","serviceunitid":"683","serviceunitname":"Union 3","city":"Waxhaw & Marvin","county":"Union","2019sales":4546,"2020sales":6738,"2021sales":13847,"2022sales":14698,"allsales":39829,"medianincome":"130705"},"geometry":{"type":"Point","coordinates":[-80.7436,34.9275]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28108","serviceunitid":"683","serviceunitname":"Union 3","city":"Mineral Springs","county":"Union","2019sales":13,"2020sales":9,"2021sales":18,"2022sales":11,"allsales":51,"medianincome":"unknown"},"geometry":{"type":"Point","coordinates":[-80.6811,34.9348]}}
+    ,
+    {"type":"Feature","properties":{"zip":"28106","serviceunitid":"683","serviceunitname":"Union 3","city":"Matthews, Stallings Weddington","county":"Union","2019sales":43,"2020sales":51,"2021sales":114,"2022sales":81,"allsales":289,"medianincome":"unknown"},"geometry":{"type":"Point","coordinates":[-80.7197,35.1143]}}
+    ,
+    {"type":"Feature","properties":{"zip":"29745","serviceunitid":"691","serviceunitname":"York 1","city":"York","county":"York","2019sales":843,"2020sales":1679,"2021sales":3407,"2022sales":2106,"allsales":8035,"medianincome":"59827"},"geometry":{"type":"Point","coordinates":[-81.2299,35.0074]}}
+    ,
+    {"type":"Feature","properties":{"zip":"29743","serviceunitid":"691","serviceunitname":"York 1","city":"Smyrna","county":"York","2019sales":1,"2020sales":15,"2021sales":4,"2022sales":41,"allsales":61,"medianincome":"58700"},"geometry":{"type":"Point","coordinates":[-81.3949,35.0302]}}
+    ,
+    {"type":"Feature","properties":{"zip":"29742","serviceunitid":"691","serviceunitname":"York 1","city":"Sharon","county":"York","2019sales":11,"2020sales":22,"2021sales":97,"2022sales":145,"allsales":275,"medianincome":"41099"},"geometry":{"type":"Point","coordinates":[-81.3619,34.8856]}}
+    ,
+    {"type":"Feature","properties":{"zip":"29734","serviceunitid":"691","serviceunitname":"York 1","city":"Rock Hill","county":"York","2019sales":0,"2020sales":7,"2021sales":0,"2022sales":2,"allsales":9,"medianincome":"unknown"},"geometry":{"type":"Point","coordinates":[-81.0243,34.9366]}}
+    ,
+    {"type":"Feature","properties":{"zip":"29733","serviceunitid":"691","serviceunitname":"York 1","city":"Rock Hill","county":"York","2019sales":13,"2020sales":17,"2021sales":14,"2022sales":3,"allsales":47,"medianincome":"unknown"},"geometry":{"type":"Point","coordinates":[-81.0327,34.9397]}}
+    ,
+    {"type":"Feature","properties":{"zip":"29732","serviceunitid":"691","serviceunitname":"York 1","city":"Rock Hill","county":"York","2019sales":2603,"2020sales":3718,"2021sales":9295,"2022sales":6365,"allsales":21981,"medianincome":"67037"},"geometry":{"type":"Point","coordinates":[-81.0534,34.9945]}}
+    ,
+    {"type":"Feature","properties":{"zip":"29731","serviceunitid":"691","serviceunitname":"York 1","city":"Rock Hill","county":"York","2019sales":47,"2020sales":25,"2021sales":63,"2022sales":21,"allsales":156,"medianincome":"unknown"},"geometry":{"type":"Point","coordinates":[-81.03,34.93]}}
+    ,
+    {"type":"Feature","properties":{"zip":"29730","serviceunitid":"691","serviceunitname":"York 1","city":"Rock Hill","county":"York","2019sales":1173,"2020sales":2489,"2021sales":4743,"2022sales":4039,"allsales":12444,"medianincome":"49258"},"geometry":{"type":"Point","coordinates":[-81.0092,34.9037]}}
+    ,
+    {"type":"Feature","properties":{"zip":"29726","serviceunitid":"691","serviceunitname":"York 1","city":"McConnells","county":"York","2019sales":23,"2020sales":52,"2021sales":73,"2022sales":52,"allsales":200,"medianincome":"52470"},"geometry":{"type":"Point","coordinates":[-81.2409,34.866]}}
+    ,
+    {"type":"Feature","properties":{"zip":"29717","serviceunitid":"691","serviceunitname":"York 1","city":"Hickory Grove","county":"York","2019sales":18,"2020sales":38,"2021sales":39,"2022sales":31,"allsales":126,"medianincome":"61333"},"geometry":{"type":"Point","coordinates":[-81.4499,34.9794]}}
+    ,
+    {"type":"Feature","properties":{"zip":"29704","serviceunitid":"691","serviceunitname":"York 1","city":"Catawba","county":"York","2019sales":111,"2020sales":136,"2021sales":250,"2022sales":192,"allsales":689,"medianincome":"63021"},"geometry":{"type":"Point","coordinates":[-80.9097,34.8416]}}
+    ,
+    {"type":"Feature","properties":{"zip":"29716","serviceunitid":"692","serviceunitname":"York 2","city":"Fort Mill","county":"York","2019sales":13,"2020sales":24,"2021sales":42,"2022sales":23,"allsales":102,"medianincome":"unknown"},"geometry":{"type":"Point","coordinates":[-80.9391,35.0072]}}
+    ,
+    {"type":"Feature","properties":{"zip":"29715","serviceunitid":"692","serviceunitname":"York 2","city":"Fort Mill","county":"York","2019sales":1577,"2020sales":4374,"2021sales":7834,"2022sales":5993,"allsales":19778,"medianincome":"86378"},"geometry":{"type":"Point","coordinates":[-80.9318,35.0182]}}
+    ,
+    {"type":"Feature","properties":{"zip":"29710","serviceunitid":"692","serviceunitname":"York 2","city":"Clover","county":"York","2019sales":1467,"2020sales":2407,"2021sales":6973,"2022sales":5478,"allsales":16325,"medianincome":"71280"},"geometry":{"type":"Point","coordinates":[-81.2299,35.0948]}}
+    ,
+    {"type":"Feature","properties":{"zip":"29708","serviceunitid":"692","serviceunitname":"York 2","city":"Fort Mill/Tega Cay ","county":"York","2019sales":2038,"2020sales":4251,"2021sales":10659,"2022sales":9718,"allsales":26666,"medianincome":"112368"},"geometry":{"type":"Point","coordinates":[-80.9982,35.045]}}  
+    ]}
+    
