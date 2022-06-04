@@ -52,6 +52,9 @@ For the D3 Leaflet mapping, the zip code areas have been sectioned off and marke
 ![Map Output2](https://github.com/sbooysen/Final-Project-Data/blob/catshtml/Images/html_js/zipdata.PNG)
 
 ## Machine Learning
+### Research questions
+ - Does median income predict individual digital cookie sales?  This was addressed using a linear regression model.
+ - Do sales of coookie types based on single digital transactions predict low or high income areas?  This was addressed using a logistic regression model
 
 ![Machine Learning Output](https://github.com/sbooysen/Final-Project-Data/blob/Carter_Segment2/Images/Stats/sales_by_income.png)
 
@@ -76,6 +79,11 @@ For the D3 Leaflet mapping, the zip code areas have been sectioned off and marke
 ![Machine Learning Output3](https://github.com/sbooysen/Final-Project-Data/blob/Carter_Segment2/Images/Screenshots/log_reg.png)
 
 ### Explanation of model choice:
+ - **Linear Regression:** We used sklearn LinearRegression() model to fit the training data and make predictions. Because this is continuous data, only the R-squared values, mean squared error, slope, and intercept were calculated.  Because this is not classification, neither a confusion matrix nor accuracy score could be calculated.
+
+ - **Logistic Regression:** We used sklearn LogisticRegression() model to fit the training data and make predictions.  An accuracy score, confusion matrix, and classification report were produced in order to evaluate the model.
+
+### Explanation of changes in model choice:
  - **Linear Regression:** No changes were made in the linear regression model choice since Segment 2.
  - **Logistic Regression:** No changes were made in the logistic regression model choice since Segment 2.
 
@@ -98,8 +106,9 @@ Further attempts to retrain the logistic regression model were performed using S
 
 ![insert SMOTE_tts](https://github.com/sbooysen/Final-Project-Data/blob/Carter_Segment3/Images/Screenshots/SMOTE_tts.png)
 
-### Description and explaination of each model's confusion matrix and accuracy score:
+### Description and explanation of each model's confusion matrix and accuracy score:
  - **Linear Regression:** R-squared values were used to score the model because continuous data were used, not classification data.  R-squared values remained the same at 0.0002 for models created on raw data and scaled data (see below) even though the model coefficient and intercept increased for scaled data.  Mean squared error remained the same at 137.58, most likely due to outliers in the data.  Overall, the linear regression model is not a good predictor of boxes sold per digital transaction based on median income.
+ - 
 **Linear Regression Model on Raw Data:**
 
 ![insert lin_reg_score_raw](https://github.com/sbooysen/Final-Project-Data/blob/Carter_Segment3/Images/Screenshots/lin_reg_score_raw.png)
@@ -131,7 +140,11 @@ The balanced accuracy score from the logistic regression using SMOTE on raw data
 ![insert SMOTE_accuracy](https://github.com/sbooysen/Final-Project-Data/blob/Carter_Segment3/Images/Screenshots/SMOTE_accuracy.png)
 
 ### Summary of Machine Learning Models:
-Overall, the logistic regression model is not a good predictor of high or low income areas when using number of boxes sold per digital transaction. This considers scaled data and resampled data using SMOTEENN and SMOTE.  Additionally, when considering the linear regression model, individuals are just as likely to purchase the same number of boxes of cookies in any given transaction irrespective of median income.
+ - **Linear Regression:** Median income is not a good predictor of number of boxes sold per digital transaction.  Individuals are just as likely to purchase the same number of boxes of cookies in any given transaction irrespective of median income. The high mean squared error (MSE) can be attributed to high variation and outliers in sales data. 
+
+ - **Logistic Regression:** Types and the numbers of cookies sold per digital transaction are not a good predictor of high or low income areas. This considers scaled data and resampled data using SMOTEENN and SMOTE. 
+
+ - **Suggested Analyses:**  While not performed in these analyses, an ANOVA could be used to determine differenes in total cookie sales per year or differences in sales per cookie type per year.
 
 ## Dashboard
 Along with our Tableau graphs, we’ll be using D3 and Leaflet to display our data on an interactive map. It will be hosted in a PowerPoint.
