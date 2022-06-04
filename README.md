@@ -25,7 +25,7 @@ We will be using Girl Scout Cookie Sales Data (Hornets' Nest) from 2019-2022.
 
 [US Census for Household Income](https://data.census.gov/cedsci/table?q=median%20income&g=0500000US37119%248600000&tid=ACSST5Y2020.S1903 "US Census for Household Income")
 
-[Host Site for D3 Map](www.cookiefrenzy.com)
+[Host Site for D3 Map](https://sbooysen.github.io/C-is-for-Cookie/)
 
 [Clipart For Presentation](https://www.littlebrowniebakers.com/clipart/)
 
