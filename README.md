@@ -117,7 +117,7 @@ Further attempts to retrain the logistic regression model were performed using S
 
 ### Description and explanation of each model's confusion matrix and accuracy score:
  - **Linear Regression:** R-squared values were used to score the model because continuous data were used, not classification data.  R-squared values remained the same at 0.0002 for models created on raw data and scaled data (see below) even though the model coefficient and intercept increased for scaled data.  Mean squared error remained the same at 137.58, most likely due to outliers in the data.  Overall, the linear regression model is not a good predictor of boxes sold per digital transaction based on median income.
- - 
+
 **Linear Regression Model on Raw Data:**
 
 ![insert lin_reg_score_raw](https://github.com/sbooysen/Final-Project-Data/blob/Carter_Segment3/Images/Screenshots/lin_reg_score_raw.png)
