@@ -94,14 +94,13 @@ console.log(greenIcon)
 
 // test one marker
 
-// var greenTestIcon = L.icon({
-//   iconUrl: 'https://raw.githubusercontent.com/sbooysen/Final-Project-Data/catshtml/Images/logos/green.png',
-//   iconSize:     [20, 20], // size of the icon
-//   iconAnchor:   [20, 20], // point of the icon which will correspond to marker's location
-//   popupAnchor:  [0, -20] // point from which the popup should open relative to the iconAnchor
-// });
+var outlineTestIcon = L.icon({
+  iconUrl: 'https://raw.githubusercontent.com/sbooysen/Final-Project-Data/catshtml/Images/logos/outline.png',
+  iconAnchor:   [20, 20], // point of the icon which will correspond to marker's location
+  popupAnchor:  [0, -20] // point from which the popup should open relative to the iconAnchor
+});
 
-// L.marker([35.2845, -80.6688], {icon: greenTestIcon}).addTo(map);
+// L.marker = {icon: outlineTestIcon};
 
 // Create All Sales overlay
 var salesURL = "https://raw.githubusercontent.com/catsdata/catsdata.github.io/main/tempcook/sales.geojson"
@@ -109,44 +108,76 @@ var salesURL = "https://raw.githubusercontent.com/catsdata/catsdata.github.io/ma
 // Bring in the cookie GeoJSON data.
 d3.json(salesURL).then(function(data) {
 
+  function marker(feature) {
+    return {
+      icon: outlineTestIcon,
+    }
+  }
+
   function styleInfo(feature) {
-    return {icon: getLogo(feature.properties.allsales)
+    return {
+      fillColor: getColor(feature.properties.allsales),
+      stroke: true,
+      weight: 0.5
     };
   }
 
-  function getLogo(allsales) {
+  function getColor(allsales) {
     if (allsales >= 40000) {
-      return redIcon;
+      return "#ff0000";
     }
     if (allsales >= 30000) {
-      return orangeIcon;
+      return "#ffa500";
     }
     if (allsales >= 20000) {
-      return yellowIcon;
+      return "#ffff00";
     }
     if (allsales >= 10000) {
-      return greenIcon;
+      return "#008000";
     }
     if (allsales >= 5000) {
-      return blueIcon;
+      return "#0000ff";
     }
     if (allsales >= 2000) {
-      return purpleIcon;
+      return "#4b0082";
     }
     if (allsales >= 500) {
-      return pinkIcon;
+      return "#ee82ee";
     }
-    return greyIcon
+    return "#f5f5f5"
   };
-  console.log(getLogo)
+  // function getLogo(allsales) {
+  //   if (allsales >= 40000) {
+  //     return redIcon;
+  //   }
+  //   if (allsales >= 30000) {
+  //     return orangeIcon;
+  //   }
+  //   if (allsales >= 20000) {
+  //     return yellowIcon;
+  //   }
+  //   if (allsales >= 10000) {
+  //     return greenIcon;
+  //   }
+  //   if (allsales >= 5000) {
+  //     return blueIcon;
+  //   }
+  //   if (allsales >= 2000) {
+  //     return purpleIcon;
+  //   }
+  //   if (allsales >= 500) {
+  //     return pinkIcon;
+  //   }
+  //   return greyIcon
+  // };
 
   L.geoJson(data, {
     pointToLayer: function(feature, latlng) {
-      return gsIcon(latlng);
+        return marker(latlng);
       },
     style: styleInfo,
-    onEachFeature: function(feature, layer) {
-      layer.bindPopup(
+    onEachFeature: function (feature, layer) {
+      marker.bindPopup(
         "Zip Code: " + feature.properties.zip + 
         "<br>Primary Service Unit: " + feature.properties.serviceunitname + 
         "<br>Median Income: $" + feature.properties.medianincome + 
@@ -154,7 +185,7 @@ d3.json(salesURL).then(function(data) {
         "<br>2019 Boxes Sold: " + feature.properties.sales2019 + 
         "<br>2020 Boxes Sold: " + feature.properties.sales2020 + 
         "<br>2021 Boxes Sold: " + feature.properties.sales2021 + 
-        "<br>2022 Boxes Sold: " + feature.properties.sales2022).openPopup();
+        "<br>2022 Boxes Sold: " + feature.properties.sales2022);
     }
   }).addTo(allcookiesales);
 
