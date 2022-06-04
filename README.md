@@ -54,7 +54,7 @@ For the D3 Leaflet mapping, the zip code areas have been sectioned off and marke
 ## Machine Learning
 ### Research questions
  - Does median income predict individual digital cookie sales?  This was addressed using a linear regression model.
- - Do sales of coookie types based on single digital transactions predict low or high income areas?  This was addressed using a logistic regression model
+ - Do sales of coookie types based on single digital transactions predict low or high income areas?  This was addressed using a logistic regression model.
 
 ![Machine Learning Output](https://github.com/sbooysen/Final-Project-Data/blob/Carter_Segment2/Images/Stats/sales_by_income.png)
 
