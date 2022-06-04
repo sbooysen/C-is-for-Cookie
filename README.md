@@ -139,7 +139,7 @@ The balanced accuracy score from the logistic regression using SMOTE on raw data
 
 ![insert SMOTE_accuracy](https://github.com/sbooysen/Final-Project-Data/blob/Carter_Segment3/Images/Screenshots/SMOTE_accuracy.png)
 
-### Summary of Machine Learning Models:
+### Summary of machine learning models:
  - **Linear Regression:** Median income is not a good predictor of number of boxes sold per digital transaction.  Individuals are just as likely to purchase the same number of boxes of cookies in any given transaction irrespective of median income. The high mean squared error (MSE) can be attributed to high variation and outliers in sales data. 
 
  - **Logistic Regression:** Types and the numbers of cookies sold per digital transaction are not a good predictor of high or low income areas. This considers scaled data and resampled data using SMOTEENN and SMOTE. 
