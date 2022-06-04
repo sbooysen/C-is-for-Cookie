@@ -76,9 +76,62 @@ For the D3 Leaflet mapping, the zip code areas have been sectioned off and marke
 ![Machine Learning Output3](https://github.com/sbooysen/Final-Project-Data/blob/Carter_Segment2/Images/Screenshots/log_reg.png)
 
 ### Explanation of model choice:
- - **Linear Regression:** We used sklearn LinearRegression() model to fit the training data and make predictions. Because this is continuous data, only the R-squared values, mean squared error, slope, and intercept were calculated.  Because this is not classification, neither a confusion matrix nor accuracy score could be calculated.
+ - **Linear Regression:** No changes were made in the linear regression model choice since Segment 2.
+ - **Logistic Regression:** No changes were made in the logistic regression model choice since Segment 2.
 
- - **Logistic Regression:** We used sklearn LogisticRegression() model to fit the training data and make predictions.  An accuracy score, confusion matrix, and classification report were produced in order to evaluate the model.
+### Description of how the model was trained or retrained:
+ - **Linear Regression:** The model was retrained on scaled data created by StandardScaler() because the R-squared on raw data was 0.0002 and mean squared error was 137.58. The sklearn train_test_split with default split of 80% training and 20% testing was applied to the scaled data as before.
+
+![insert lin_reg_tts_scaled here](https://github.com/sbooysen/Final-Project-Data/blob/Carter_Segment3/Images/Screenshots/lin_reg_tts_scaled.png)
+
+ - **Logistic Regression:** The model was retrained initially on scaled data creating by StandardScaler() because precision and recall for "0" (low income areas) were 0.27 and 0.0007, respectively, for the model when using raw data. The sklearn train_test_split with default split of 80% training and 20% testing was applied to the scaled data as before.  
+
+![insert log_reg_tts_scaled here](https://github.com/sbooysen/Final-Project-Data/blob/Carter_Segment3/Images/Screenshots/log_reg_tts_scaled.png)
+
+Further attempts to retrain the logistic regression model were performed using SMOTEENN and SMOTE.  Results of the logistic regression model did not improve when using scaled data.  Because there was such discrepancy between the number of digital sales in "0" (low income areas) and "1" (high income areas), SMOTEENN was selected to increase the number of "0" data points while also reducing the number of "1" (high income areas) data points. SMOTE was used to oversample "0" (low income areas) data points only. The sklearn train_test_split was applied to the resampled data in both instances using a default split of 80% training and 20% testing.
+ 
+**SMOTEENN train_test_split:**
+
+![insert SMOTEENN_tts](https://github.com/sbooysen/Final-Project-Data/blob/Carter_Segment3/Images/Screenshots/SMOTEENN_tts.png)
+
+**SMOTE train_test_split:**
+
+![insert SMOTE_tts](https://github.com/sbooysen/Final-Project-Data/blob/Carter_Segment3/Images/Screenshots/SMOTE_tts.png)
+
+### Description and explaination of each model's confusion matrix and accuracy score:
+ - **Linear Regression:** R-squared values were used to score the model because continuous data were used, not classification data.  R-squared values remained the same at 0.0002 for models created on raw data and scaled data (see below) even though the model coefficient and intercept increased for scaled data.  Mean squared error remained the same at 137.58, most likely due to outliers in the data.  Overall, the linear regression model is not a good predictor of boxes sold per digital transaction based on median income.
+**Linear Regression Model on Raw Data:**
+
+![insert lin_reg_score_raw](https://github.com/sbooysen/Final-Project-Data/blob/Carter_Segment3/Images/Screenshots/lin_reg_score_raw.png)
+
+**Linear Regression Model on Scaled Data:**
+
+![insert lin_reg_score_scaled](https://github.com/sbooysen/Final-Project-Data/blob/Carter_Segment3/Images/Screenshots/lin_reg_score_scaled.png)
+
+ - **Logistic Regression:**  Precision and accuracy scores were identical for the logistic regression model performed on raw data and scaled data.  The accuracy score was 0.747.  Precision for predicting "0" (low income areas) was 0.27 with a recall of 0.0007, whereas precision for predicting "1" (high income areas) was 0.75 with a recall of 1.00. The difference was most likely due to a class imbalance, so the logistic regression was further performed on resampled data using SMOTEENN and SMOTE.
+
+The balanced accuracy score from the logistic regression using SMOTEENN on raw data was 0.50, but the imbalanced classification report did show slight changes.  Precision for "0" (low income areas) increased slightly to 0.30 and recall increased slightly to 0.20, whereas precision remain the same for "1" (high income areas) at 0.75 with a recall of 0.98. 
+
+The balanced accuracy score from the logistic regression using SMOTE on raw data was 0.54. Based on the imbalanced classification report, precision for predicting "0" (low income areas) was 0.28, but a substantial improvement was found in the recall score of 0.60.  Precision for predicting "1" (high income areas) was 0.78 but recall dropped significantly to 0.49.
+
+**Accuracy score, confusion matrix, and classification report for logistic regression on raw data:**
+
+![insert log_reg_accuracy](https://github.com/sbooysen/Final-Project-Data/blob/Carter_Segment3/Images/Screenshots/log_reg_accuracy.png)
+
+**Accuracy score, confusion matrix, and classification report for logistic regression on scaled data:**
+
+![insert log_reg_accuracy_scaled](https://github.com/sbooysen/Final-Project-Data/blob/Carter_Segment3/Images/Screenshots/log_reg_accuracy_scaled.png)
+
+**Balanced accuracy score, confusion matrix, and imbalanced classification report for logistic regression with SMOTEENN on raw data:**
+
+![insert SMOTEENN_accuracy](https://github.com/sbooysen/Final-Project-Data/blob/Carter_Segment3/Images/Screenshots/SMOTEENN_accuracy.png)
+
+**Balanced accuracy score, confusion matrix, and imbalanced classification report for logistic regression with SMOTE on raw data:**
+
+![insert SMOTE_accuracy](https://github.com/sbooysen/Final-Project-Data/blob/Carter_Segment3/Images/Screenshots/SMOTE_accuracy.png)
+
+### Summary of Machine Learning Models:
+Overall, the logistic regression model is not a good predictor of high or low income areas when using number of boxes sold per digital transaction. This considers scaled data and resampled data using SMOTEENN and SMOTE.  Additionally, when considering the linear regression model, individuals are just as likely to purchase the same number of boxes of cookies in any given transaction irrespective of median income.
 
 ## Dashboard
 Along with our Tableau graphs, we’ll be using D3 and Leaflet to display our data on an interactive map. It will be hosted in a PowerPoint.
