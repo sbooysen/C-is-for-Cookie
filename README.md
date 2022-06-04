@@ -162,7 +162,7 @@ Along with our Tableau graphs, we’ll be using D3 and Leaflet to display our da
 
 In total, we created six graphs to display our findings on cookie sales over the last four years. 
 
-[Tableau Cookie Story Book](https://public.tableau.com/views/CookieTimeStorybook-2/StoryGraphs?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
+[Tableau Cookie Story Book](https://public.tableau.com/app/profile/stacey.booysen/viz/CookiesforDays/StoryGraphs?publish=yes)
 
 We began with a look at the overall sales totals for 2019-2022. There was a large spike around COVID's peak, which was a result of the cookie data itself consisting purely of purchases made through ‘Digital Cookie’. This method of payment processing only accepts debit or credit cards, which leaves out any purchases made with cash.
 
