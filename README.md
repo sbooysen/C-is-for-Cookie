@@ -46,10 +46,19 @@ Postgress will be used for housing our database while we store our data in GitHu
 
 ## JavaScript/HTML
 
-For the D3 Leaflet mapping, the zip code areas have been sectioned off and markers are being put in place to relay any information needed when clicking on each area.
+For the D3 Leaflet mapping, the zip code areas have been sectioned off and markers were put in place to relay any information needed when clicking on each area.
 
 ![Map Output1](https://github.com/sbooysen/Final-Project-Data/blob/catshtml/Images/html_js/boundaries.PNG)
 ![Map Output2](https://github.com/sbooysen/Final-Project-Data/blob/catshtml/Images/html_js/zipdata.PNG)
+
+With additional coding, as seen below, the map has become more intricate.
+
+![Schema](https://github.com/sbooysen/C-is-for-Cookie/blob/catshtml/Images/ERD%20SQL/schemasnap.PNG)
+
+Once both aspects were combined, outlines and markers, we were able to start adding more details to the map. This has also allowed us to more easily study the areas and the sales therein. As can be seen below, with the circles and area outlines combined, we can visualize the data at a glance. The range of colors offer extra distinction to help zero in on the desired information such as box amounts per area per year.
+
+![New map markers](https://github.com/sbooysen/C-is-for-Cookie/blob/catshtml/Images/html_js/layered_initial.png)
+
 
 ## Machine Learning
 ### Research questions
@@ -149,17 +158,37 @@ The balanced accuracy score from the logistic regression using SMOTE on raw data
 ## Dashboard
 Along with our Tableau graphs, we’ll be using D3 and Leaflet to display our data on an interactive map. It will be hosted in a PowerPoint.
 
-- We are separating the dataset into various categories for analyzation. Using a pie graph, we're separating the cookie types into their sales amounts in order to get an idea of overall popularity.
+### Visualizing the Data
 
-![Cookie Graph](https://github.com/sbooysen/Final-Project-Data/blob/Stacey_2/Graph%20Images/Cookie_Graph.png)
+In total, we created six graphs to display our findings on cookie sales over the last four years. 
 
-- Using bar charts and line graphs, we're studying various differences between yearly sales as well as the differences between high and low income area sales.
+[Tableau Cookie Story Book](https://public.tableau.com/views/CookieTimeStorybook-2/StoryGraphs?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
 
-![Income Graph](https://github.com/sbooysen/Final-Project-Data/blob/Stacey_2/Graph%20Images/Income_Graphs.png)
+We began with a look at the overall sales totals for 2019-2022. There was a large spike around COVID's peak, which was a result of the cookie data itself consisting purely of purchases made through ‘Digital Cookie’. This method of payment processing only accepts debit or credit cards, which leaves out any purchases made with cash.
 
-Our findings with the high and low income areas showed a higher sales amount in the high income areas. We had predicted this to be the case, but also found an interesting variable that potentially skewed the information into favoring this outcome. The higher income areas were more valued by the troops than lower income areas, and therefore the troops would choose mostly high income areas over low income areas. The fact that there are more high income areas to begin with in the dataset, means that there is an imbalance when concluding that one income type buys more boxes than another.
+![Line_Graph_Sales]( https://github.com/sbooysen/C-is-for-Cookie/blob/Stacey_3/Images/Graph%20Images/Linechartsales.png)
 
-To get a good idea of the discrepancy, we will be graphing the amount of high income zip codes compared to low income zip codes for a more detailed comparison.
+Next, we sorted the popularity of each cookie in total as well as separately through 2019-2022. As can be seen below, Thinmints, Samoas, and Tagalongs are consistently ranked as the most popular cookie choice among customers. 
+
+![Cookie Popularity]( https://github.com/sbooysen/C-is-for-Cookie/blob/Stacey_3/Images/Graph%20Images/Piecharts.png)
+
+Once we had the popularities displayed, we looked into which method of delivery was most used throughout the last four years. Our goal was to see if the delivery methods were vastly changed due to COVID, and to predict whether or not it would continue to be affected if that happened to be the case.
+
+![Cookie delivery]( https://github.com/sbooysen/C-is-for-Cookie/blob/Stacey_3/Images/Graph%20Images/Cookiesaletype.png)
+
+As shown above, the in-hand methods were lowest to begin with, however, they are also the only delivery method that is on a steady increase. One the other hand, the In-Person Delivery and Shipping categories went up sharply in 2021, but are now seeing a slight decrease in 2022.
+
+Although it could indicate that the In-Person and Shipping delivery methods might start to decline again, they are not declining at a rapid rate. Since the COVID situation has become more lax, it could simply indicate that more people are going out and either paying directly at a booth, or with cash.
+
+Our next inquiry came from the differences in sales for high and low income levels. We wanted to know which income level tended to purchase more cookies, and as shown below, it looks to be the high-income areas that buy the most.
+
+![High low income]( https://github.com/sbooysen/C-is-for-Cookie/blob/Stacey_3/Images/Graph%20Images/CashvsDigital.png)
+
+While this seems straightforward, it is also worth noting that there are far more troops going to the high-income areas to begin with. The data is slightly skewed as a result. Since we do not have an even amount of troops in both high and low income areas, it only makes sense for the high-income areas to have the most sales.
+
+After analyzing the digital cookie data, we brought in the numbers for the cash sales to compare with what we already had. The cash sales are generally booth-related, and therefore the number of boxes sold through this method decreased drastically during COVID’s height.
+
+Overall, the visuals showed us mostly predicted outcomes, though within those outcomes we ran into technicalities that complicated the data slightly. It was determined that the sales were indeed affected by COVID, but had a few other complications in the mix. Things such as the cookie shortage and the income of the areas that were visited by troops.
 
 ## Communication Protocol
 We are meeting both on Slack and in-person in order to work on this project together.
