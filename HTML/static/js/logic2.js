@@ -41,32 +41,16 @@ let twentyone = new L.LayerGroup();
 let twentytwo = new L.LayerGroup();
 let zips = new L.LayerGroup();
 
-// create overlay objust with data layers
+// create overlay object with data layers
 let overlays = {
   "Overall Sales": allcookiesales,
-  "2019": nineteen,
-  "2020": twenty,
-  "2021": twentyone,
-  "2022": twentytwo,
   "Zip Code Boundaries": zips
 };
 
 // control capability on layers shown
 L.control.layers(baseMaps, overlays).addTo(map);
 
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-// import zip code geojson polygons
-d3.json("https://github.com/sbooysen/C-is-for-Cookie/blob/main/HTML/resources/zipboundaries.json").then(function(data) {
 
-  L.geoJSON(data, {
-      color: "#8934CD",
-      fillColor: "#34CD7C",
-      weight: 1   
-  }).addTo(zips);
-  
-  zips.addTo(map);
-  });
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 // Create All Sales overlay
@@ -134,6 +118,19 @@ d3.json("https://raw.githubusercontent.com/catsdata/catsdata.github.io/main/temp
 allcookiesales.addTo(map);
 });
 
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// import zip code geojson polygons
+d3.json("https://github.com/sbooysen/C-is-for-Cookie/blob/main/HTML/resources/zipboundaries.json").then(function(data) {
+
+  L.geoJSON(data, {
+      color: "#8934CD",
+      fillColor: "#34CD7C",
+      weight: 1   
+  }).addTo(zips);
+  
+  zips.addTo(map);
+  });
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // LEGEND
 // NEED TO FLIP LEGEND CODE
 
