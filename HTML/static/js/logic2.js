@@ -41,36 +41,20 @@ let twentyone = new L.LayerGroup();
 let twentytwo = new L.LayerGroup();
 let zips = new L.LayerGroup();
 
-// create overlay objust with data layers
+// create overlay object with data layers
 let overlays = {
   "Overall Sales": allcookiesales,
-  "2019": nineteen,
-  "2020": twenty,
-  "2021": twentyone,
-  "2022": twentytwo,
+  //"2019": nineteen,
+  //"2020": twenty,
+  //"2021": twentyone,
+  //"2022": twentytwo,
   "Zip Code Boundaries": zips
 };
 
 // control capability on layers shown
 L.control.layers(baseMaps, overlays).addTo(map);
 
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-// import zip code geojson polygons
-d3.json("https://raw.githubusercontent.com/sbooysen/C-is-for-Cookie/main/HTML/resources/zipboundaries.json").then(function(data) {
-
-  L.geoJSON(data, {
-      color: "#8934CD",
-      fillColor: "#34CD7C",
-      weight: 1   
-  }).addTo(zips);
-  
-  zips.addTo(map);
-  });
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
 // Create All Sales overlay
-
 // Bring in the cookie GeoJSON data.
 d3.json("https://raw.githubusercontent.com/catsdata/catsdata.github.io/main/tempcook/sales.geojson").then(function(data) {
 
@@ -89,27 +73,27 @@ d3.json("https://raw.githubusercontent.com/catsdata/catsdata.github.io/main/temp
   // This function determines the color of the marker based on the quanity of cookie sales.
   function getColor(allsales) {
     if (allsales >= 40000) {
-      return "#ff0000";
+      return "#ee3124";
     }
     if (allsales >= 30000) {
-      return "#ffa500";
+      return "#ff7818";
     }
     if (allsales >= 20000) {
-      return "#ffff00";
+      return "#f7be00";
     }
     if (allsales >= 10000) {
-      return "#008000";
+      return "#00b451";
     }
     if (allsales >= 5000) {
-      return "#0000ff";
+      return "#1496d4";
     }
     if (allsales >= 2000) {
-      return "#4b0082";
+      return "#9e5fd6";
     }
     if (allsales >= 500) {
-      return "#ee82ee";
+      return "#fd329e";
     }
-    return "#f5f5f5"
+    return "#f3f3f3"
   };
 
   L.geoJson(data, {
@@ -128,14 +112,30 @@ d3.json("https://raw.githubusercontent.com/catsdata/catsdata.github.io/main/temp
         "<br>2020 Boxes Sold: " + feature.properties.sales2020 + 
         "<br>2021 Boxes Sold: " + feature.properties.sales2021 + 
         "<br>2022 Boxes Sold: " + feature.properties.sales2022);
+        
   }
 }).addTo(allcookiesales);
 
 allcookiesales.addTo(map);
 });
 
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// import zip code geojson polygons
+d3.json("https://raw.githubusercontent.com/sbooysen/Final-Project-Data/catshtml/HTML/resources/zipboundaries.json").then(function(data) {
+
+  L.geoJSON(data, {
+      color: "#8934CD",
+      fillColor: "#34CD7C",
+      weight: 1   
+  }).addTo(zips);
+  
+zips.addTo(map);
+});
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
 // LEGEND
-// NEED TO FLIP LEGEND CODE
 
 let legend = L.control({
   position: "bottomright"
@@ -146,14 +146,14 @@ legend.onAdd = function() {
 
   const sales = ['0', '500', '2k', '5k', '10k', '20k', '30k', '40k'];
   const colors = [
-    "#D3D3D3",
-    "#ee82ee",
-    "#4b0082",
-    "#0000ff",
-    "#008000",
-    "#ffff00",
-    "#ffa500",
-    "#ff0000"
+    "#f3f3f3",
+    "#fd329e",
+    "#9e5fd6",
+    "#1496d4",
+    "#00b451",
+    "#f7be00",
+    "#ff7818",
+    "#ee3124"
   ];
 
   for (var i = 0; i < sales.length; i++) {
