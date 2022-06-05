@@ -51,6 +51,19 @@ let overlays = {
 L.control.layers(baseMaps, overlays).addTo(map);
 
 
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// import zip code geojson polygons
+d3.json("https://github.com/sbooysen/C-is-for-Cookie/blob/main/HTML/resources/zipboundaries.json").then(function(data) {
+
+  L.geoJSON(data, {
+      color: "#8934CD",
+      fillColor: "#34CD7C",
+      weight: 1   
+  }).addTo(zips);
+  
+  zips.addTo(map);
+  });
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 // Create All Sales overlay
@@ -118,19 +131,6 @@ d3.json("https://raw.githubusercontent.com/catsdata/catsdata.github.io/main/temp
 allcookiesales.addTo(map);
 });
 
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-// import zip code geojson polygons
-d3.json("https://github.com/sbooysen/C-is-for-Cookie/blob/main/HTML/resources/zipboundaries.json").then(function(data) {
-
-  L.geoJSON(data, {
-      color: "#8934CD",
-      fillColor: "#34CD7C",
-      weight: 1   
-  }).addTo(zips);
-  
-  zips.addTo(map);
-  });
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // LEGEND
 // NEED TO FLIP LEGEND CODE
 
