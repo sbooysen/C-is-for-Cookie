@@ -41,19 +41,22 @@ let twentyone = new L.LayerGroup();
 let twentytwo = new L.LayerGroup();
 let zips = new L.LayerGroup();
 
-// create overlay object with data layers
+// create overlay objust with data layers
 let overlays = {
   "Overall Sales": allcookiesales,
+  "2019": nineteen,
+  "2020": twenty,
+  "2021": twentyone,
+  "2022": twentytwo,
   "Zip Code Boundaries": zips
 };
 
 // control capability on layers shown
 L.control.layers(baseMaps, overlays).addTo(map);
 
-
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // import zip code geojson polygons
-d3.json("https://github.com/sbooysen/C-is-for-Cookie/blob/main/HTML/resources/zipboundaries.json").then(function(data) {
+d3.json("https://raw.githubusercontent.com/sbooysen/Final-Project-Data/catshtml/HTML/resources/zipboundaries.json").then(function(data) {
 
   L.geoJSON(data, {
       color: "#8934CD",
