@@ -17,7 +17,7 @@ let darkstreets = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/dark-v10/
 	accessToken: API_KEY
 });
 
-// map object with center for Charlotte NC, zoom level for Charlotte and surrounding counties and default tile layer.
+// map object with center for Charlotte NC (Harrisburg), zoom level for Charlotte and surrounding counties and default tile layer.
 let map = L.map('mapid', {
 	center: [35.3015, -80.6438],
 	zoom: 9,
@@ -35,10 +35,10 @@ let baseMaps = {
 
 // add data layers, including zip code boundaries
 let allcookiesales = new L.LayerGroup();
-let nineteen = new L.LayerGroup();
-let twenty = new L.LayerGroup();
-let twentyone = new L.LayerGroup();
-let twentytwo = new L.LayerGroup();
+// let nineteen = new L.LayerGroup();
+// let twenty = new L.LayerGroup();
+// let twentyone = new L.LayerGroup();
+// let twentytwo = new L.LayerGroup();
 let zips = new L.LayerGroup();
 
 // create overlay object with data layers
@@ -121,7 +121,6 @@ d3.json("https://raw.githubusercontent.com/catsdata/catsdata.github.io/main/temp
 allcookiesales.addTo(map);
 });
 
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // import zip code geojson polygons
 d3.json("https://raw.githubusercontent.com/sbooysen/Final-Project-Data/catshtml/HTML/resources/zipboundaries.json").then(function(data) {
 
@@ -134,7 +133,7 @@ d3.json("https://raw.githubusercontent.com/sbooysen/Final-Project-Data/catshtml/
     };
   }
 
-  // This function determines the color of the marker based on the quanity of cookie sales.
+  // This function determines the color of the polygon based on the service units for each zip code.
   function getFill(zipCode) {
     if (zipCode == "28170") {return "#EF5350"};
     if (zipCode == "28135") {return "#EF5350"};
@@ -247,12 +246,8 @@ d3.json("https://raw.githubusercontent.com/sbooysen/Final-Project-Data/catshtml/
   
 zips.addTo(map);
 });
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
 
 // LEGEND
-
 let legend = L.control({
   position: "bottomright"
 });
