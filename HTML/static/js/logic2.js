@@ -176,9 +176,9 @@ d3.json("https://raw.githubusercontent.com/sbooysen/Final-Project-Data/catshtml/
     if (zipCode == "28278") {return "#29B6F6"};
     if (zipCode == "28273") {return "#29B6F6"};
     if (zipCode == "28217") {return "#29B6F6"};
-    if (zipCode == "28277") {return "#26C6DA"};
-    if (zipCode == "28134") {return "#26C6DA"};
-    if (zipCode == "28226") {return "#26A69A"};
+    if (zipCode == "28277") {return "#5c1f8b"};
+    if (zipCode == "28134") {return "#5c1f8b"};
+    if (zipCode == "28226") {return "#5c1f8b"};
     if (zipCode == "28210") {return "#26A69A"};
     if (zipCode == "28209") {return "#26A69A"};
     if (zipCode == "28207") {return "#26A69A"};
@@ -213,16 +213,16 @@ d3.json("https://raw.githubusercontent.com/sbooysen/Final-Project-Data/catshtml/
     if (zipCode == "28009") {return "#FFCA28"};
     if (zipCode == "28002") {return "#FFCA28"};
     if (zipCode == "28001") {return "#FFCA28"};
-    if (zipCode == "28104") {return "#A1887F"};
-    if (zipCode == "28079") {return "#A1887F"};
+    if (zipCode == "28104") {return "#7fa199"};
+    if (zipCode == "28079") {return "#7fa199"};
     if (zipCode == "28174") {return "#8D6E63"};
     if (zipCode == "28112") {return "#8D6E63"};
     if (zipCode == "28111") {return "#8D6E63"};
     if (zipCode == "28110") {return "#8D6E63"};
     if (zipCode == "28103") {return "#8D6E63"};
-    if (zipCode == "28173") {return "#795548"};
-    if (zipCode == "28108") {return "#795548"};
-    if (zipCode == "28106") {return "#795548"};
+    if (zipCode == "28173") {return "#543B32"};
+    if (zipCode == "28108") {return "#543B32"};
+    if (zipCode == "28106") {return "#543B32"};
     if (zipCode == "29745") {return "#BDBDBD"};
     if (zipCode == "29743") {return "#BDBDBD"};
     if (zipCode == "29742") {return "#BDBDBD"};
@@ -234,10 +234,10 @@ d3.json("https://raw.githubusercontent.com/sbooysen/Final-Project-Data/catshtml/
     if (zipCode == "29726") {return "#BDBDBD"};
     if (zipCode == "29717") {return "#BDBDBD"};
     if (zipCode == "29704") {return "#BDBDBD"};
-    if (zipCode == "29716") {return "#9E9E9E"};
-    if (zipCode == "29715") {return "#9E9E9E"};
-    if (zipCode == "29710") {return "#9E9E9E"};
-    if (zipCode == "29708") {return "#9E9E9E"};
+    if (zipCode == "29716") {return "#757575"};
+    if (zipCode == "29715") {return "#757575"};
+    if (zipCode == "29710") {return "#757575"};
+    if (zipCode == "29708") {return "#757575"};
     return "#e7e7e7"
     };
 
