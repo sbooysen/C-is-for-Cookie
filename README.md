@@ -46,6 +46,8 @@ The final ERD brought in clean data on zip code incomes and service unit territo
 ## Database Storage
 Postgress will be used for housing our database while we store our data in GitHub.
 
+![Schema](https://github.com/sbooysen/C-is-for-Cookie/blob/catshtml/Images/ERD%20SQL/schemasnap.PNG)
+
 ## JavaScript/HTML
 
 For the D3 Leaflet mapping, the zip code areas have been sectioned off and markers were put in place to relay any information needed when clicking on each area.
@@ -53,14 +55,9 @@ For the D3 Leaflet mapping, the zip code areas have been sectioned off and marke
 ![Map Output1](https://github.com/sbooysen/Final-Project-Data/blob/catshtml/Images/html_js/boundaries.PNG)
 ![Map Output2](https://github.com/sbooysen/Final-Project-Data/blob/catshtml/Images/html_js/zipdata.PNG)
 
-With additional coding, as seen below, the map has become more intricate.
-
-![Schema](https://github.com/sbooysen/C-is-for-Cookie/blob/catshtml/Images/ERD%20SQL/schemasnap.PNG)
-
 Once both aspects were combined, outlines and markers, we were able to start adding more details to the map. This has also allowed us to more easily study the areas and the sales therein. As can be seen below, with the circles and area outlines combined, we can visualize the data at a glance. The range of colors offer extra distinction to help zero in on the desired information such as box amounts per area per year.
 
 ![New map markers](https://github.com/sbooysen/C-is-for-Cookie/blob/catshtml/Images/html_js/layered_initial.png)
-
 
 ## Machine Learning
 ### Research questions
