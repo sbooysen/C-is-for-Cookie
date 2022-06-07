@@ -1,5 +1,7 @@
 # One Smart Cookie
 
+[Power Point Presentation for Overall Findings](https://github.com/sbooysen/C-is-for-Cookie/blob/main/One%20Smart%20Cookie%20Presentation%20-%20Final-pdf.pdf)
+
 ## What's the deal?
 Our goal is to analyze the Girl Scout cookie data to compare and predict sales in high-income vs. low-income areas. Our data encompasses information from 2019-2022, allowing us to see before, during, and after COVID results. Along with the sales analysis, we'll be analyzing the in-person vs online order data to see if we can predict how the majority of the orders will occur next year.
 
