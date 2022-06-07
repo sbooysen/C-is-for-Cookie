@@ -155,7 +155,7 @@ The balanced accuracy score from the logistic regression using SMOTE on raw data
  - **Suggested Analyses:**  While not performed in these analyses, an ANOVA could be used to determine differenes in total cookie sales per year or differences in sales per cookie type per year.
 
 ## Dashboard
-Along with our Tableau graphs, we’ll be using D3 and Leaflet to display our data on an interactive map. It will be hosted in a PowerPoint.
+Along with our Tableau graphs, we’ll be using D3 and Leaflet to display our data on an interactive map. Our presentation will be hosted in a PowerPoint.
 
 ### Visualizing the Data
 
