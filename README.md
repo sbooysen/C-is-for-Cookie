@@ -188,6 +188,3 @@ While this seems straightforward, it is also worth noting that there are far mor
 After analyzing the digital cookie data, we brought in the numbers for the cash sales to compare with what we already had. The cash sales are generally booth-related, and therefore the number of boxes sold through this method decreased drastically during COVID’s height.
 
 Overall, the visuals showed us mostly predicted outcomes, though within those outcomes we ran into technicalities that complicated the data slightly. It was determined that the sales were indeed affected by COVID, but had a few other complications in the mix. Things such as the cookie shortage and the income of the areas that were visited by troops.
-
-## Communication Protocol
-We are meeting both on Slack and in-person in order to work on this project together.
